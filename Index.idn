@@ -1,7 +1,7 @@
 # Atdork-DB index v1
-# generated: 2026-10-15T09:45:26Z
-# entries: 104
-# total-dorks: 978611
+# generated: 2026-10-15T10:23:15Z
+# entries: 105
+# total-dorks: 978613
 @admin/adminpanel-dorks.txt|a7496acb4e22b459eb8a869fa95d3904a19484d9a1778043be291be741b82f02|8524|447|Adminpanel Dorks
 @admin/awstats.txt|5a36794cf5cf63618b49c02492786955ed5f4dbe634966b108e50b7159e36838|367|15|Awstats
 @bing/bing1.txt|0f5f64695ae5aeba9cc794a6f4f8ad476a29a7e915de7005f6fe1b26871f8c67|14232|195|Bing1
@@ -104,5 +104,6 @@
 @shopping/webstore-dorks.txt|fb373efdc8cad621009f532262334abb0d7840200cf1531dd1f0450558422a03|7859|340|Webstore Dorks
 @social/discord-tokens-dorks.txt|9af78d596a080c8ac1e1ef3625b9139aa88ea60a8699291a48a56beaee8dcabc|305|7|Discord Tokens Dorks
 @social/linkedindorks.txt|78cd4fce0320db4f505581e7628a886998d1e8c5c5f9b472a1316b9cfefb41a4|1071|12|Linkedindorks
+@test/c@1_test.txt|7231aa0e66c7c6d17f8f73c78aa877c5d22201be9aa9cb8a8b1141d0a592139d|38|2|C@1 Test
 @vuln/vuln-server-dorks.txt|a693e7974587c3fb0ccb98e1e0e0387c0aa66d7270de82b9cacdf69295b62de7|5245|112|Vuln Server Dorks
 @yandex/yandex.txt|684ad9663c3b8ed0dbf38777f0843e7018f2f587bbb95841c2a4baae353f12ba|555|10|Yandex
