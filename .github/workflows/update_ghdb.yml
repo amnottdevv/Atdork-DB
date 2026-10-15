@@ -1,0 +1,49 @@
+name: Update GHDB Database
+
+on:
+  schedule:
+    # Every Monday at 03:00 UTC
+    - cron: "0 3 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # needed so the job can commit & push back
+
+jobs:
+  update-ghdb:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Atdork-DB
+        uses: actions/checkout@v4
+
+      - name: Checkout AtDork (for core.ghdb_scraper + index builder)
+        uses: actions/checkout@v4
+        with:
+          repository: amnottdevv/AtDork
+          path: atdork
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install minimal dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run GHDB export
+        env:
+          ATDORK_SRC: ${{ github.workspace }}/atdork
+        run: python scripts/update_ghdb_database.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add '@ghdb' Index.idn
+          if git diff --cached --quiet; then
+            echo "No dork changes, skipping commit."
+          else
+            git commit -m "chore: update GHDB dork database ($(date -u +%Y-%m-%d))"
+            git push
+          fi
