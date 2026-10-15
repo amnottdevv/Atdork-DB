@@ -1,0 +1,20 @@
+index.of.secret
+index.of.private
+index.of.secure
+index.of.protected
+intitle:"index.of.personal"
+inurl:explorer.cfm inurl:(dirpath|This_Directory)
+intitle:"index of" intext:"content.ie5"
+allinurl:"/*/_vti_pvt/" | allinurl:"/*/_vti_cnf/"
+intitle:upload inurl:upload intext:upload -forum -shop -support -w3c
+"Index of" rar r01 nfo Modified 2004
+intitle:index.of /maildir/new/
+intitle:"Backup-Management (phpMyBackup v.0.4 beta * )" -johnny.ihackstuff
+intitle:"Folder Listing" "Folder Listing" Name Size Date/Time File Folder
+"Directory Listing for" "Hosted by Xerver"
+"Welcome to the directory listing of" "NetworkActiv-Web-Server"
+"Warning: Installation directory exists at" "Powered by Zen Cart" -demo
+inurl:install.pl intext:"Reading path paramaters" -edu
+intitle:index.of cisco asa -site:cisco.com
+intitle:index.of ios -site:cisco.com
+allintext:"WebServerX Server at"

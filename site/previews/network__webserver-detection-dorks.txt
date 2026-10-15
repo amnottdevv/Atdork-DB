@@ -1,0 +1,20 @@
+"Novell, Inc" WEBACCESS Username Password "Version *.*" Copyright -inurl:help -guides|guide
+intext:"404 Object Not Found" Microsoft-IIS/5.0
+intitle:"Object not found" netware "apache 1.."
+intitle:"Object not found!" intext:"Apache/2.0.* (Linux/SuSE)"
+intitle:"Welcome to Your New Home Page!" "by the Debian release"
+(inurl:81-cobalt | inurl:cgi-bin/.cobalt)
+intitle:"Test Page for the Apache HTTP Server on Fedora Core" intext:"Fedora Core Test Page"
+intitle:"Welcome to Windows Small Business Server 2003"
+intitle:"Welcome To Your WebSTAR Home Page"
+intitle:"Document title goes here" intitle:"used by web search tools" " example of a simple Home Page"
+intitle:"Welcome to 602LAN SUITE *"
+(intitle:"502 Proxy Error")|(intitle:"503 Proxy Error") "The proxy server could not handle the request" -topic -mail -4suite -list -site:geocrawler.co
+inurl:nnls_brand.html OR inurl:nnls_nav.html
+intitle:"Apache Status" "Apache Server Status for"
+intitle:"BadBlue: the file-sharing web server anyone can use"
+intitle:"Welcome to IIS 4.0"
+"powered by openbsd" +"powered by apache"
+filetype:asmx inurl:(_vti_bin|api|webservice)
+inurl:"/web-console/" intitle:"Administration Console"
+intext:Apache/2.2.29 (Unix) mod_ssl/2.2.29 | intitle:"Index of /"

@@ -1,0 +1,20 @@
+# ============================================
+# COMMON DORKS - SQL INJECTION & IDOR
+# ============================================
+inurl:product.php?id=
+inurl:product.php?pid=
+inurl:product.php?product_id=
+inurl:view.php?id=
+inurl:views.php?id=
+inurl:detail.php?id=
+inurl:details.php?id=
+inurl:item.php?id=
+inurl:page.php?id=
+inurl:news.php?id=
+inurl:article.php?id=
+inurl:post.php?id=
+inurl:blog.php?id=
+inurl:?id=
+inurl:?cat=
+inurl:?category=
+inurl:?cate=

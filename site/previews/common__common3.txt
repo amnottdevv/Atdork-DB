@@ -1,0 +1,20 @@
+# ============================================
+# COMMON DORKS - XSS & HTML INJECTION
+# ============================================
+# ============================================
+# PARAMETER DASAR XSS (Reflected)
+# ============================================
+inurl:?q=
+inurl:?query=
+inurl:?search=
+inurl:?s=
+inurl:?keyword=
+inurl:?key=
+inurl:?term=
+inurl:?string=
+inurl:?text=
+inurl:?input=
+inurl:?name=
+inurl:?title=
+inurl:?subject=
+inurl:?message=

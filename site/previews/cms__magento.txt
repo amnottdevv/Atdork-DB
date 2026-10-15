@@ -1,0 +1,20 @@
+/*
+SHOR7CUT | BUG7SEC | HTTP://FACEBOOK.COM/BUG7SEC
+*/
+php jembut.php "Login or Create an Account. Registered Customers. If you have an account with us, log in using your email address. *Email Address. *Password. Login"
+php jembut.php "/skin/frontend/"
+php jembut.php "/frontend/enterprise/"
+php jembut.php "/js/mage/"
+php jembut.php "/default/sales/"
+php jembut.php "/customer/account/"
+php jembut.php "/account/create/"
+php jembut.php "/account/login/"
+php jembut.php "/account/forgotpassword"
+php jembut.php "/adminhtml/default/default/"
+php jembut.php "lib/LinLibertineFont/"
+php jembut.php "lib/3Dsecure/" 
+php jembut.php "lib/flex/"
+php jembut.php "lib/googlecheckout/"
+php jembut.php "lib/LinLibertineFont/"
+php jembut.php "/catalogsearch/advanced"
+php jembut.php "/sales/guest/form/"

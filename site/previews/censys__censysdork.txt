@@ -1,0 +1,20 @@
+Industrial Control System Protocols 🔎 →
+services.service_name: {BACNET, CODESYS, EIP, FINS, FOX, IEC60870_5_104, S7, MODBUS}
+Prismview (Samsung Electronic Billboards) 🔎 →
+services.tls.certificates.leaf_data.subject.common_name: "Prismview" or services.http.response.headers.server: "Prismview Player"
+Gas Station Pump Controllers (ATGs) 🔎 →
+(same_service(port: 10001 and banner: "IN-TANK INVENTORY") or services.service_name: ATG) and services.truncated: false
+Pro-Tip: Add services.truncated: false to your query to exclude honeypots (Hosts with 100+ services).
+Electric Vehicle Chargers 🔎 →
+same_service(http.response.headers.server: "gSOAP/2.8" and http.response.headers.content_length: 583)
+Carel PlantVisor 🔎 →
+services.http.response.html_title: "CAREL Pl@ntVisor"
+C4 Max Vehicle GPS 🔎 →
+services.banner: "[1m[35mWelcome on console"
+GaugeTech Electricity Meters 🔎 →
+services.http.response.headers.server: "EIG Embedded Web Server"
+XZERES Wind Turbines 🔎 →
+services.http.response.html_title: "XZERES Wind"
+Note: This query works best with virtual hosts included.
+Nordex Wind Turbine Farms 🔎 →
+services.http.response.html_title: "Nordex Control" or services.tls.certificates.leaf_data.issuer.domain_component: "NORDEX-AG"

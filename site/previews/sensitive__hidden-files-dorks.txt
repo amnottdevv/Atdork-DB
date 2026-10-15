@@ -1,0 +1,20 @@
+inurl:/cgi-bin/sqwebmail?noframes=1
+inurl:/Citrix/Nfuse17/
+inurl:/dana-na/auth/welcome.html
+inurl:/eprise/
+inurl:/Merchant2/admin.mv | inurl:/Merchant2/admin.mvc | intitle:”Miva Merchant 
+Administration Login” -inurl:cheap-malboro.net
+inurl:/modcp/ intext:Moderator+vBulletin
+inurl:/SUSAdmin intitle:”Microsoft Software update Services”
+inurl:/webedit.* intext:WebEdit Professional -html
+inurl:1810 “Oracle Enterprise Manager”
+inurl:2000 intitle:RemotelyAnywhere -site:realvnc.com
+inurl::2082/frontend -demo
+inurl:administrator “welcome to mambo”
+inurl:bin.welcome.sh | inurl:bin.welcome.bat | intitle:eHealth.5.0
+inurl:cgi-bin/ultimatebb.cgi?ubb=login
+inurl:Citrix/MetaFrame/default/default.aspx
+inurl:confixx inurl:login|anmeldung
+inurl:coranto.cgi intitle:Login (Authorized Users Only)
+inurl:csCreatePro.cgi
+inurl:default.asp intitle:”WebCommander”

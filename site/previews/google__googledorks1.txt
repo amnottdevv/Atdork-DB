@@ -1,0 +1,20 @@
+Credits: Bulls Eye: https://github.com/BullsEye0
+"MySQL_ROOT_PASSWORD:" "docker-compose" ext:yml
+!Host=*.* intext:enc_UserPassword=* ext:pcf
+!Host=. intext:enc_UserPassword= ext:pcf
+" -FrontPage-" ext:pwd inurl:(service | authors | administrators | users)
+" -FrontPage-" ext:pwd inurl:(service | authors | administrators | users) " -FrontPage-" inurl:service.pwd
+" ActiveKB v1.5 Copyright Â©"
+" Dumping data for table (username|user|users|password)"
+" Dumping data for table"
+" End Stealer " ext:txt
+" Powered by JTL-Shop 2"
+" Powered by Pie Cart Pro "
+" Powered by Xpoze "
+" Proudly Served by LiteSpeed Web Server" intitle:index.of./
+" created by creato.biz "
+" phpMyAdmin MySQL-Dump" "INSERT INTO" -"the"
+" phpMyAdmin MySQL-Dump" filetype:txt
+"# -FrontPage-" ext:pwd
+"# -FrontPage-" ext:pwd inurl:(service | authors | administrators | users) "
+"# -FrontPage-" ext:pwd inurl:(service | authors | administrators | users) "# -FrontPage-" inurl:service.pwd

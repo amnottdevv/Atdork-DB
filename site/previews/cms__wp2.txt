@@ -1,0 +1,20 @@
+inurl: wp-content/plugins/front-end-upload /
+inurl: wp-content/plugins/omni-secure-files /
+inurl :/ wp-content/plugins/rbxgallery /
+inurl :/ wp-content/plugins/wpstorecart /
+allinurl :/ wp-content/plugins/wp-easy-gallery /
+inurl: wp-content/plugins/front-file-manager /
+inurl :/ wp-content/plugins/html5avmanager /
+inurl :/ wp-content/plugins/store-locator-le /
+inurl :/ wp-content/plugins/wp-property /
+inurl :/ wp-content/plugins/HT-Poi /
+inurl :/ eklentileri / HT-Poi /
+inurl :/ wp-content/plugins/nmedia-user-file-uploader /
+inurl :/ wp-content/plugins/foxypress /
+inurl :/ wp-content/plugins/comment-extra-field /
+inurl :/ wp-content/plugins/asset-manager /
+inurl :/ wp-content/plugins/wordpress-member-private-conversation /
+inurl :/ wp-content/plugins/gallery-plugin /
+inurl :/ wp-content/plugins/fcchat /
+inurl :/ wp-content/plugins/font-uploader /
+inurl :/ wp-content/plugins/mm-forms-community /

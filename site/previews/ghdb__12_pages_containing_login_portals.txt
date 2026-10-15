@@ -1,0 +1,20 @@
+intitle:"MikroTik RouterOS Managing Webpage"
+inurl:metaframexp/default/login.asp | intitle:"Metaframe XP Login"
+inurl:"webadmin" filetype:nsf
+intitle:"Dell Remote Access Controller"
+intitle:"ZyXEL Prestige Router" "Enter password"
+filetype:php inurl:"webeditor.php"
+inurl:/cgi-bin/sqwebmail?noframes=1
+filetype:cfg login "LoginServer="
+intitle:"please login" "your password is *"
+intitle:"ITS System Information" "Please log on to the SAP System"
+intitle:Novell intitle:WebAccess "Copyright *-* Novell, Inc"
+filetype:pl "Download: SuSE Linux Openexchange Server CA"
+intitle:"Virtual Server Administration System"
+"OPENSRS Domain Management" inurl:manage.cgi
+inurl:postfixadmin intitle:"postfix admin" ext:php
+intitle:"phpPgAdmin - Login" Language
+inurl:/webedit.* intext:WebEdit Professional -html
+inurl:"631/admin" (inurl:"op=*") | (intitle:CUPS)
+intext:"Mail admins login here to administrate your domain."
+intitle:Group-Office "Enter your username and password to login"

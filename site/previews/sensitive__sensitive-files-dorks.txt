@@ -1,0 +1,20 @@
+1. General File Searches
+intitle:"index of" "parent directory" ext:pdf
+filetype:xls inurl:"/confidential"
+inurl:/admin/backup filetype:sql
+filetype:docx site:gov "confidential"
+inurl:"/securedocs" filetype:pdf
+2. Sensitive Directories
+intitle:"index of" "backup"
+inurl:"/private" intitle:"index of"
+intitle:"index of" "passwords"
+inurl:/db_backup filetype:sql
+intitle:"index of" "/config"
+3. Login Credentials
+intext:"username" filetype:log
+intitle:"index of" "passwd"
+filetype:txt "passwords" site:edu
+filetype:sql intext:"INSERT INTO" "password"
+inurl:"/ftp" filetype:log
+4. Configuration Files
+intitle:"index of" "config.php"

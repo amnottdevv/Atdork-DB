@@ -1,0 +1,20 @@
+Administration;;.edu US SSH;;hostname:edu country:us port:22
+Administration;;admin/1234;;admin 1234
+Administration;;admin;;port:80 admin
+Administration;;Allegro;;"200 OK" -Microsoft -Virata -Apache Allegro
+Administration;;AMX Control Systems;;1.1-rr-std-b12 port:80
+Administration;;Anonymous Access Allowed;;"Anonymous+access+allowed"
+Administration;;Anonymous Access Granted;;"anonymous access granted"
+Administration;;APC Management Card;;APC Management Card
+Administration;;apc;;apc
+Administration;;Barracuda targets;;barracuda
+Administration;;bigfix;;bigfix
+Administration;;CarelDataServer;;CarelDataServer
+Administration;;Cern 3.0;;CERN 3.0
+Administration;;Coldfusion Developer Edition;;a license exception
+Administration;;CPU;;computershare
+Administration;;Dell Remote Access Controller;;"Remote Access Controller" port:80
+Administration;;Delta Networks Inc;;delta
+Administration;;DNS;;fast dns port:80
+Administration;;etcd;;etcd
+Administration;;Firewalls;;firewall 200

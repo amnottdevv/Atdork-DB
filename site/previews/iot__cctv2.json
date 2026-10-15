@@ -1,0 +1,20 @@
+{
+    "Toshiba" : "intitle:”Toshiba Network Camera” user login",
+    "EvoCam" : "intitle:”EvoCam” inurl:”webcam.html”",
+    "AXISCam" : {
+      "first_tab": "intitle:”Live View / – AXIS ”",
+      "second_tab" : "intitle:”Live View / – AXIS 206M”",
+      "third_tab" : "intitle:”Live View / – AXIS 206W”",
+      "fourth_tab" : "intitle:”Live View / – AXIS 210?",
+      "sixth_tab" : "intitle:NetCamSC*"
+    },
+    "Sony" : {
+      "first_tab": "intitle:”sony network camera snc-p",
+      "second_tab": "intitle:sony network camera snc-m1"
+    },
+    "Huawei" : "Account Password All rights reserved intitle:HG8245",
+    "Archer C7" : "inurl:login.html intitle:Archer C7",
+    "Other" : {
+      "first_tab" : "inurl:”CgiStart?page=”",
+      "second_tab" : "inurl:/view.shtml",
+      "third_tab" : "intitle:”Live View / – AXIS",

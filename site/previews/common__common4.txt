@@ -1,0 +1,20 @@
+# ============================================
+# COMMON DORKS - FILE UPLOAD, RCE, SSRF
+# ============================================
+# ============================================
+# PARAMETER / FILE UPLOAD
+# ============================================
+inurl:upload.php
+inurl:uploads.php
+inurl:file-upload.php
+inurl:upload-file.php
+inurl:image-upload.php
+inurl:photo-upload.php
+inurl:avatar.php
+inurl:profile-pic.php
+inurl:gallery-upload.php
+inurl:media-upload.php
+inurl:attachment.php
+inurl:import.php
+inurl:import-file.php
+inurl:csv-upload.php

@@ -1,0 +1,20 @@
+filetype:php inurl:index.php inurl:"module=subjects" inurl:"func=*" (listpages| viewpage | listcat)
+intitle:"WordPress > * > Login form" inurl:"wp-login.php"
+inurl:technote inurl:main.cgi*filename=*
+intext:("UBB.threadsÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ 6.2"|"UBB.threadsÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ 6.3") intext:"You * not logged *" -site:ubbcentral.com
+inurl:/SiteChassisManager/
+inurl:"/cgi-bin/loadpage.cgi?user_id="
+powered.by.instaBoard.version.1.3
++intext:"powered by MyBulletinBoard"
+phpLDAPadmin intitle:phpLDAPadmin filetype:php inurl:tree.php | inurl:login.php | inurl:donate.php (0.9.6 | 0.9.7)
+inurl:chitchat.php "choose graphic"
+intitle:guestbook inurl:guestbook "powered by Advanced guestbook 2.*" "Sign the Guestbook"
+"powered by Gallery v" "[slideshow]"|"images" inurl:gallery
+"Powered by GTChat 0.95"+"User Login"+"Remember my login information"
+intitle:"WEB//NEWS Personal Newsmanagement" intext:"Ãƒâ€šÃ‚Â© 2002-2004 by Christian Scheb - Stylemotion.de"+"Version 1.4 "+"Login"
+"CosmoShop by Zaunz Publishing" inurl:"cgi-bin/cosmoshop/lshop.cgi" -johnny.ihackstuff.com -V8.10.106 -V8.10.100 -V.8.10.85 -V8.10.108 -V8.11*
+"Powered by Woltlab Burning Board" -"2.3.3" -"v2.3.3" -"v2.3.2" -"2.3.2"
+inurl:course/category.php | inurl:course/info.php | inurl:iplookup/ipatlas/plot.php
+"Powered by XOOPS 2.2.3 Final"
+"This website was created with phpWebThings 1.4"
+"Copyright 2000 - 2005 Miro International Pty Ltd. All rights reserved" "Mambo is Free Software released"

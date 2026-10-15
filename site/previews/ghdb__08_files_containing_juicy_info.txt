@@ -1,0 +1,20 @@
+intitle:"Ganglia" "Cluster Report for"
+allinurl:/examples/jsp/snp/snoop.jsp
+intitle:"index of" mysql.conf OR mysql_config
+intitle:"Big Sister" +"OK Attention Trouble"
+inurl:"/cricket/grapher.cgi"
+inurl:"cacti" +inurl:"graph_view.php" +"Settings Tree View" -cvs -RPM
+intitle:"System Statistics" +"System and Network Information Center"
+BEGIN (CERTIFICATE|DSA|RSA) filetype:key
+BEGIN (CERTIFICATE|DSA|RSA) filetype:csr
+"sets mode: +s"
+inurl:email filetype:mdb
+data filetype:mdb -site:gov -site:mil
+intitle:"Index Of" cookies.txt "size"
+inurl:backup filetype:mdb
+inurl:forum filetype:mdb
+intext:(password | passcode) intext:(username | userid | user) filetype:csv
+inurl:profiles filetype:mdb
+filetype:fp5 fp5 -site:gov -site:mil -"cvs log"
+filetype:fp3 fp3
+filetype:fp7 fp7

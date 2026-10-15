@@ -1,0 +1,20 @@
+recepie .php?user_id = site:digital
+souk / php?category= site:camp
+source: ".ie" + "salesgirl"
+source: ".er" + "auction"
+buyonegetonefree //php= + site:bi
+business .php?avd = site:degree
+discount / departmentstore / ?php= + site:ki
+coffeeshop .php?avd = site:exchange
+freshfood / php?id= site:kz
+device //php= + site:fi
+allintitle: ".at" + "shoppingcentre"
+buy / bitcoin / ?php= + site:lr
+neteller / php?login_id= site:jm
+mastercard / replacement / ?php= + site:coffee
+candystore / php?login_id= site:bd
+change / butcher / ?php= + site:fj
+"delivery" + "checkout" / ?php=sec + site:today
+"nutrition" + "americanexpress" / ?php=cat + site:properties
+delivery //php= + site:direct
+skrill .php?page_id = site:gives

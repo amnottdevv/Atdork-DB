@@ -1,0 +1,20 @@
+# ============================================
+# COMMON DORKS - LFI / RFI / PATH DISCLOSURE
+# ============================================
+# ============================================
+# PARAMETER DASAR LFI (Local File Inclusion)
+# ============================================
+inurl:?page=
+inurl:?file=
+inurl:?path=
+inurl:?dir=
+inurl:?template=
+inurl:?theme=
+inurl:?lang=
+inurl:?language=
+inurl:?config=
+inurl:?include=
+inurl:?load=
+inurl:?module=
+inurl:?controller=
+inurl:?action=

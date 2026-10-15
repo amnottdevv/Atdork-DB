@@ -1,0 +1,20 @@
+intitle:"Samba Web Administration Tool" intext:"Help Workgroup"
+"ftp://" "www.eastgame.net"
+intitle:phpMyAdmin "Welcome to phpMyAdmin ***" "running on * as root@*"
+"you can now password" | "this is a special page only seen by you. your profile visitors" inurl:imchaos
+"Welcome to Administration" "General" "Local Domains" "SMTP Authentication" inurl:admin
+inurl:rpSys.html
+filetype:pl intitle:"Ultraboard Setup"
+intitle:"Horde :: My Portal" -"[Tickets"
+intitle:"Uploader - Uploader v6" -pixloads.com
+http://www.google.com/search?q=inurl%3Aindex.php%3Fpagedb%3Drss
+"[ phpinfo ] [ php.ini ] [ cpu ] [ mem ] [ users ] [ tmp ] [ delete ]"
+"r57shell 1.4"
+"r57shell"
+"safe_mode: * PHP version: * cURL: * MySQL: * MSSQL: * PostgreSQL: * Oracle: *"
+"www.*.com - c99shell" OR "www.*.net - c99shell" OR "www.*.org - c99shell"
+"CGI-Telnet Unit-x Team Connected to *.com" OR "CGI-Telnet Unit-x Team Connected to"
+inurl:/vb/install/upgrade.php
+intitle:cyber anarchy shell
+MySQL: ON MSSQL: OFF Oracle: OFF MSSQL: OFF PostgreSQL: OFF cURL: ON WGet: ON Fetch: OFF Perl: ON
+inurl:view.php?board1_sn=

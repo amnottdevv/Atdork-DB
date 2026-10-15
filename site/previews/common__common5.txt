@@ -1,0 +1,20 @@
+inurl:phpinfo.php
+inurl:info.php
+'inurl:/api/jsonws'
+'inurl:/dana-na/'
+'inurl:/OA_HTML'
+ext:yml
+ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+intitle:"index of"
+intitle:"index of /" "*key.pem"
+ext:log
+intitle:"index of" ext:sql|xls|xml|json|csv
+"MYSQL_ROOT_PASSWORD:" ext:env OR ext:yml -git
+intitle:"index of" "config.db"
+allintext:"API_SECRET*" ext:env | ext:yml
+intext:admin ext:sql inurl:admin
+allintext:username,password filetype:log
+"-----BEGIN RSA PRIVATE KEY-----" inurl:id_rsa
+ext:sql intext:"-- phpMyAdmin SQL Dump"
+intitle:\"Dashboard [Jenkins]\"
+intitle:traefik 'inurl:8080/dashboard'

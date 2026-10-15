@@ -1,0 +1,20 @@
+# ============================================
+# DUCKDUCKGO DORKS - ERROR & SENSITIVE
+# ============================================
+#
+# KEUNGGULAN DUCKDUCKGO:
+# 1. !bang - Pencarian langsung ke situs target
+# 2. Operator dasar: site:, intitle:, inurl:, filetype:
+# 3. Privasi - Tidak ada tracking IP
+# 4. `\` - Langsung ke hasil pertama
+#
+# ============================================
+# ============================================
+# 1. ERROR MESSAGES - SQL / DATABASE
+# ============================================
+"Error in lines :"
+"Error in your SQL syntax"
+"supplied argument is not a valid MySQL"
+"You have an error in your SQL syntax"
+"Warning: mysql_fetch_array"
+"Warning: mysql_num_rows"

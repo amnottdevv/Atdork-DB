@@ -16,6 +16,14 @@ Atdork-DB/
 └── ...
 ```
 
+## Web catalog
+
+**[amnottdevv.github.io/Atdork-DB](https://amnottdevv.github.io/Atdork-DB/)** — a
+PyPI-style catalog of every package: instant search, `@folder` filters,
+per-package previews and one-click `atdork install` commands. The site is fully
+static, generated from this repository (`Index.idn` + the folder `README.md`
+files) by `scripts/build_site.py`, and deployed to GitHub Pages on every push.
+
 ## Using it from AtDork
 
 ```bash
@@ -67,11 +75,17 @@ atdork index --build
 1. Drop the file into a themed `@folder/` (kebab-case folder names, no
    spaces in filenames).
 2. Run `atdork index --build` (or let CI do it).
-3. Commit. Files load as queries only when they are line-per-dork `.txt`
+3. Add a row for the file to the folder's `README.md` Packages table —
+   those descriptions power the web catalog's search and detail pages.
+4. Commit. Files load as queries only when they are line-per-dork `.txt`
    files; structured `.csv`/`.json` packages are installable but not
    query-loadable.
 
 ## Automation
 
-`.github/workflows/update_ghdb.yml` re-exports Exploit-DB's GHDB into
-`@ghdb/` every Monday and rebuilds `Index.idn`.
+- `.github/workflows/update_ghdb.yml` re-exports Exploit-DB's GHDB into
+  `@ghdb/` every Monday and rebuilds `Index.idn`.
+- `.github/workflows/deploy-site.yml` regenerates the web catalog
+  (`site/data/packages.json` + per-package previews) and deploys it to
+  GitHub Pages whenever `Index.idn`, a folder `README.md` or `site/`
+  changes (plus a weekly safety rebuild).

@@ -1,0 +1,20 @@
+intitle:"remote ui:top page"
+inurl:hp/device/this.LCDispatcher
+intitle:webeye inurl:login.ml
+intitle:"DEFAULT_CONFIG - HP"
+camera linksys inurl:main.cgi
+intitle:"my webcamXP server!" inurl:":8080"
+intitle:"toshiba network camera - User Login"
+"please visit" intitle:"i-Catcher Console" Copyright "iCode Systems"
+intext:"Ready with 10/100T Ethernet"
+intext:"UAA (MSB)" Lexmark -ext:pdf
+"Starting SiteZAP 6.0"
+intitle:"EvoCam" inurl:"webcam.html"
+intext:"Videoconference Management System" ext:htm
+"Copyright (c) Tektronix, Inc." "printer status"
+intext:"MaiLinX Alert (Notify)" -site:networkprinters.com
+inurl:"printer/main.html" intext:"settings"
+intitle:"Live NetSnap Cam-Server feed"
+intitle:"V-Gear BEE"
+intitle:"iVISTA.Main.Page"
+intitle:"SpeedStream * Management Interface"

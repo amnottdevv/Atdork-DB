@@ -1,0 +1,20 @@
+intitle:"ERROR: The requested URL could not be retrieved" "While trying to retrieve the URL" "The following error was encountered:"
+intitle:MyShell 1.1.0 build 20010923
+inurl:polly/CP
+"Please re-enter your password It must match exactly"
+"index of /" ( upload.cfm | upload.asp | upload.php | upload.cgi | upload.jsp | upload.pl )
+(intitle:"WordPress ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº Setup Configuration File")|(inurl:"setup-config.php?step=")
+inurl:"amfphp/browser/servicebrowser.swf"
+intitle:"uploader by ghost-dz" ext:php
+intitle:"WSO 2.4" [ Sec. Info ], [ Files ], [ Console ], [ Sql ], [ Php ], [ Safe mode ], [ String tools ], [ Bruteforce ], [ Network ], [ Self remove ]
+ext:asp intext:Smart.Shell 1.0 BY P0Uy@_$3r\/3R -
+intitle:SN0X SHELL: WEEEEEEEEEEEEEEEEED
+intext:"Thehacker - Agd_Scorp - BLaSTER - Cr@zy_King - KinSize - JeXToXiC - s3f4 - rx5"
+intext:"Please select file to upload:" ext:php
+crime24 stealer ext:txt
+intitle:"WSO " ext:php intext:"server ip" 2015 intext:" [ home ]"
+(intitle:"phpshell" OR intitle:"c99shell" OR intitle:"r57shell" OR intitle:"PHP Shell " OR intitle:"phpRemoteView") `rwx` "uname"
+intitle: "phpshell" "Php Safe-Mode Bypass"
+intitle:"nstview v2.1:: nst.void.ru" | intext:"nsTView v2.1 :: nst.void.ru. Password: Host:"
+( ext:php ) ( inurl:/wp-content/uploads/AAPL/loaders/ )
+intitle:"Priv8 Mailer Inbox 2015" ext:php

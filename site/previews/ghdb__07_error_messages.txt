@@ -1,0 +1,20 @@
+"ORA-00921: unexpected end of SQL command"
+intitle:"the page cannot be found" inetmgr
+intitle:"the page cannot be found" "2004 microsoft corporation"
+"Fatal error: Call to undefined function" -reply -the -next
+filetype:log "PHP Parse error" | "PHP Warning" | "PHP Error"
+"The script whose uid is " "is not allowed to access"
+intitle:Configuration.File inurl:softcart.exe
+"Warning: mysql_query()" "invalid query"
+"[SQL Server Driver][SQL Server]Line 1: Incorrect syntax near" -forum -thread -showthread
+"Parse error: parse error, unexpected T_VARIABLE" "on line" filetype:php
+"There seems to have been a problem with the" " Please try again by clicking the Refresh button in your web browser."
+"Warning:" "SAFE MODE Restriction in effect." "The script whose uid is" "is not allowed to access owned by uid 0 in" "on line"
+"Warning: Division by zero in" "on line" -forum
+"Warning: mysql_connect(): Access denied for user: '*@*" "on line" -help -forum
+"Warning:" "failed to open stream: HTTP request failed" "on line"
+"Warning: Bad arguments to (join|implode) () in" "on line" -help -forum
+"Unable to jump to row" "on MySQL result index" "on line"
+allintext:"fs-admin.php"
+inurl:"*.php?*=*.php" intext:"Warning: include" -inurl:.html -site:"php.net" -site:"stackoverflow.com" -inurl:"*forums*"
+"[function.getimagesize]: failed to open stream: No such file or directory in"

@@ -1,0 +1,20 @@
+Vendor;Product;Comment;Dorks
+ABB;AC 800M;Controller;ABB AC 800M
+ABB;RTU560;Substation automation product;ABB RTU560
+ABB;RTU500;Remote Terminal Unit;ABB RTU-Helpdesk
+ABB;SREA-01;Ethernet Adapter Module;ABB SREA-01
+ABB;Generic;Multiple Devices;ABB Webmodule
+ACKP;Generic;Multiple Devices, often data center monitoring;AKCP Embedded Web Server
+Adcon Telemetry;A440 Wireless Modem;Base Station;A440 Wireless Modem
+Adcon Telemetry;A850 Telemetry Gateway;Base Station for Adcon Wireless Sensor Networks ;A850 Telemetry Gateway
+Adcon Telemetry;addUPI-OPC Server;.;addUPI Server
+Adcon Telemetry;addVANTAGE Pro 6.X;HMI;addVANTAGE
+Adcon Telemetry;Generic;Generic;title:adcon
+Beck IPC;IPC@CHIP;PLC;IPC@CHIP
+Cimetrics;Eplus - B/IP to B/WS Gateway Firewall;networking products for distributed monitoring and control systems;Cimetrics Eplus Web Server
+Clorius Controls A/S;ISC SCADA;SCADA Software;ISC SCADA Service HTTPserv:00001
+Codesys;WebVisu;.;Webvisu
+CodeSys;WebVisu;.;Visu Remote Login
+Codesys;.;.;port:2455 operating system
+CodeSys;.;.;3S-Smart Software Solutions
+Delta Controls;enteliTOUCH;HMI Building automation;DELTA enteliTOUCH

@@ -1,0 +1,20 @@
+## 7,000 Dorks for hacking into various sites ##
+about.php?cartID=
+accinfo.php?cartId=
+acclogin.php?cartID=
+add.php?bookid=
+add_cart.php?num=
+addcart.php?
+addItem.php
+add-to-cart.php?ID=
+addToCart.php?idProduct=
+addtomylist.php?ProdId=
+adminEditProductFields.php?intProdID=
+advSearch_h.php?idCategory=
+affiliate.php?ID=
+affiliate-agreement.cfm?storeid=
+affiliates.php?id=
+ancillary.php?ID=
+archive.php?id=
+article.php?id=
+phpx?PageID

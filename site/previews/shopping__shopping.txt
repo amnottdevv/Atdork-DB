@@ -1,0 +1,20 @@
+inurl:".php?cat="+intext:"Paypal"+site:UK
+inurl:".php?cat="+intext:"/Buy
+Now/"+site:.net
+inurl:".php?cid="+intext:"online+betting"
+inurl:".php?catid="
+inurl:".php?catid=" intext:"View cart"
+inurl:".php?catid=" intext:"Buy Now"
+inurl:".php?catid=" intext:"add to cart"
+inurl:".php?catid=" intext:"shopping"
+inurl:".php?catid=" intext:"boutique"
+inurl:".php?catid=" intext:"/store/"
+inurl:".php?catid=" intext:"/shop/"
+inurl:".php?catid=" intext:"Toys"
+inurl:".php?cat="+intext:"Paypal"+site:UK
+inurl:".php?cat="+intext:"/Buy
+Now/"+site:.net
+inurl:".php?cid="+intext:"online+betting"
+inurl:".php?id=" intext:"View cart"
+inurl:".php?id=" intext:"Buy Now"
+inurl:".php?id=" intext:"add to cart"

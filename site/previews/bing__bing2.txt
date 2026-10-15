@@ -1,0 +1,20 @@
+# ============================================
+# BING DORKS - ADVANCED OPERATORS
+# ============================================
+#
+# BING OPERATOR EKSKLUSIF:
+# 1. loc: / location: - Mencari berdasarkan lokasi geografis
+# 2. ip: - Mencari website di alamat IP tertentu
+# 3. domain: - Mencari domain tertentu (lebih akurat dari site:)
+# 4. linkfromdomain: - Mencari halaman yang TIDAK ada link dari domain tertentu
+# 5. language: - Mencari dalam bahasa tertentu
+# 6. feed: - Mencari RSS/Atom feed
+# 7. hasrelationship: - Mencari relasi antar website
+# 8. prefer: - Meningkatkan bobot keyword tertentu
+# 9. site: - (sama seperti Google tapi dengan tambahan)
+#
+# ============================================
+# ============================================
+# 1. loc: / location: - MENCARI BERDASARKAN LOKASI
+# ============================================
+#

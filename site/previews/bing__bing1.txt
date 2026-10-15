@@ -1,0 +1,20 @@
+# ============================================
+# BING DORKS - OR & CONTAINS OPERATOR
+# ============================================
+# 
+# BING KEUNGGULAN:
+# 1. OR - Mencari salah satu dari banyak pilihan
+# 2. contains: - Mencari halaman yang berisi LINK ke tipe file tertentu
+# 3. Kombinasi OR + contains: sangat powerful di Bing
+#
+# ============================================
+# ============================================
+# 1. MENGGUNAKAN OR UNTUK PARAMETER SQL INJECTION
+# ============================================
+# Cari multiple parameter SQLi sekaligus
+inurl:(product.php?id= OR view.php?id= OR detail.php?id=)
+inurl:(?id= OR ?cat= OR ?pid= OR ?product_id=)
+inurl:(?page= OR ?p= OR ?pg= OR ?menu=)
+inurl:(news.php?id= OR article.php?id= OR post.php?id=)
+inurl:(item.php?id= OR blog.php?id= OR post.php?p=)
+# Cari parameter + error SQL

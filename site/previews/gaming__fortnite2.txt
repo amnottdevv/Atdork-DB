@@ -1,0 +1,20 @@
+BattlePass .php?param = site:net
+FortniteEasterSkins .php?page_id = site:org
+FortniteSeason3 / EpicGames / ?php= + site:net
+FortniteAlts .php?id = site:com
+FortniteSeason1 .php?coID = site:org
+VBucksGiveaway / FortniteCrackedAccounts / ?php= + site:org
+RenigadeRaiderAccount / php?product_id= site:net
+Fortnite //php= + site:org
+FortniteAccounts / php?login_id= site:org
+SkullTrooperAccount / php?id= site:com
+FortniteSeason5 .php?include = site:com
+allintitle: ".com" + "FortniteAccounts"
+allintext: ".com" + "EpicGames"
+FortniteCompetitive / FortniteCrackedAccounts / ?php= + site:com
+FortniteSeason4 / php?page_id= site:net
+EpicGames //php= + site:com
+FortniteTournament / php?id= site:org
+FortniteSeason4 / php?user_id= site:net
+FortniteCompetitive .php?avd = site:org
+EpicGames / php?cat= site:com

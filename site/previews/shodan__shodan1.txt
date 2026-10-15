@@ -1,0 +1,20 @@
+Basic Shodan Filters
+city:
+Find devices in a particular city.
+city:"Bangalore"
+country:
+Find devices in a particular country.
+country:"IN"
+geo:
+Find devices by giving geographical coordinates.
+geo:"56.913055,118.250862"
+hostname:
+Find devices matching the hostname.
+server: "gws" hostname:"google"
+net:
+Find devices based on an IP address or /x CIDR.
+net:210.214.0.0/16
+os:
+Find devices based on operating system.
+os:"windows 7"
+port:

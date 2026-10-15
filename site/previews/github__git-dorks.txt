@@ -1,0 +1,20 @@
+.mlab.com password
+WFClient Password extension:ica
+access_key
+access_token
+admin_pass
+admin_user
+algolia_admin_key
+algolia_api_key
+alias_pass
+alicloud_access_key
+amazon_secret_access_key
+amazonaws
+ansible_vault_password
+aos_key
+api_key
+api_key_secret
+api_key_sid
+api_secret
+api.googlemaps AIza
+apidocs

@@ -1,0 +1,20 @@
+department.cfm?dept=
+course.php?id=17
+store.asp?cat_id=
+index.php/component/content/article?id=/herron
+default.aspx?pg=si&op=
+declaration_more.php?num= intext:"shopping" site:us
+index.cfm?id=db4be7d1-0344-b1ac-d9691ca0739eb608
+events/details.aspx?eventid=10155
+diary/?m=
+show.php?qry= 
+/calendar.php?pg=
+cms/index.php?id=33
+source: ".aero" + "transgalactic"
+index.asp?id=44
+club/scripts/view/view_insert.asp?pg=PNEWS&GRP=18399&IID=270867&NS=PNEWS&APP=106
+convenciones/?q=node/28
+inurl:showimg.php?cid=title:shop 
+shopwelcome.cfm?title=
+/cgi-win/shop/orders/orders.txt
+dspace/bitstream/handle/10133/3653/IRs2ndSubmissionfinal.docx?sequence=1

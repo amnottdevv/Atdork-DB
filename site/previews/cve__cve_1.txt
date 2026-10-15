@@ -1,0 +1,16 @@
+# CVE hunting dorks — batch 1
+# Cari halaman/aplikasi yang memuat referensi CVE (advisory, changelog, PoC).
+intext:"cve-2025-"
+intext:"cve-2024-"
+intitle:"cve-2024-"
+intitle:"cve-2025-"
+inurl:"cve-2024-"
+inurl:"cve-2025-"
+intext:"critical cve" -site:github.com
+intext:"cvss:3.1" intext:"cve-"
+intext:"nvd.nist.gov/vuln/detail/cve-"
+inurl:"nvd.nist.gov/vuln/detail/CVE-"
+site:github.com "cve-2025-" extension:md
+site:pastebin.com "cve-2025-"
+intext:"exploit-db.com/exploits" intitle:"cve-"
+intitle:"security advisory" intext:"cve-2025-"

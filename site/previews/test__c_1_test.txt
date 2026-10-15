@@ -1,0 +1,2 @@
+inurl:"hello"
+intext:"hello world"

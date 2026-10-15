@@ -1,0 +1,20 @@
+### Shodan Dorks by twitter.com/lothos612
+# Basic Shodan Filters
+### city:
+Find devices in a particular city.
+`city:"Bangalore"`
+### country:
+Find devices in a particular country.
+`country:"IN"`
+### geo:
+Find devices by giving geographical coordinates.
+`geo:"56.913055,118.250862"`
+### Location
+`country:us`
+`country:ru country:de city:chicago`
+### hostname:
+Find devices matching the hostname.
+`server: "gws" hostname:"google"`
+`hostname:example.com -hostname:subdomain.example.com`
+`hostname:example.com,example.org`
+### net:
