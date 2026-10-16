@@ -1,0 +1,20 @@
+# Source: https://github.com/dootss/shodan-dorks (dorks.yaml)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+# == Cameras ==
+camera
+webcam has_screenshot:true
+has_screenshot:true IP Webcam
+server: webcamxp
+server: "webcam 7"
+title:"blue iris remote view"
+title:"ui3 -"
+title:"Network Camera VB-M600"
+product:"Yawcam webcam viewer httpd"
+title:"IPCam Client"
+server: GeoHttpServer
+server: VVTK-HTTP-Server
+title:"Avigilon"
+ACTi
+WWW-Authenticate: "Merit LILIN Ent. Co., Ltd"
+server: "i-Catcher Console"
+Netwave IP Camera Content-Length: 2574

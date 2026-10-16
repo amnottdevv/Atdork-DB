@@ -11,6 +11,7 @@ Atdork-DB/
 ├── @ghdb/                  # auto-refreshed GHDB export (weekly CI)
 ├── @cve/                   # CVE hunting queries
 ├── @shodan/ @censys/       # search-engine specific dorks
+├── @virustotal/ @targets/  # VT Intelligence queries, recon domain lists
 ├── @cms/ @cloud/ @crypto/  # technology themed collections
 ├── @admin/ @sensitive/     # recon targets
 └── ...

@@ -1,0 +1,47 @@
+# Source: https://github.com/BushidoUK/OSINT-SearchOperators (ShodanQueriesAppliances.csv)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+ssl:”brand name” port:22
+ssl:”brand name” port:21
+ssl:”brand name” port:25
+ssl:"brand name" product:"VNC" port:”5900”
+ssl:”brand name” port:3389
+ssl:”brand name” port:445
+ssl:”brand name” product:"MongoDB"
+ssl:”brand name” product:”MS-SQL”
+ssl:"brand name" product:"elastic"
+http.favicon.hash:1611729805
+http.favicon.hash:1552860581
+ssl:”brand name” product:"Redis" port:"6379"
+http.title:mariadb
+http.favicon.hash:-228859905
+http.title:exchange
+http.favicon.hash:-1249852061
+http.favicon.hash:442749392
+ssl:”brand name” port:”2375”
+http.title:vmware http.favicon.hash:-991123252
+http.title:ID_VC_Welcome
+http.title:sharepoint
+http.title:weblogic
+http.title:tomcat
+http.favicon.hash:-297069493
+ssl:”brand name” “nas-qnap”
+ssl:”brand name” product:”Citrix”
+http.favicon.hash:-1166125415
+ssl:”brand name” product:"Pulse Secure"
+http.component:pulse secure
+http.title:fortigate
+ssl:”brand name” http.title:BIG-IP
+ssl:”brand name” http.favicon.hash:878647854
+http.favicon.hash:945408572
+ssl:”brand name” http.favicon.hash:631108382
+http.title:solarwinds http.favicon.hash:-1776962843
+http.favicon.hash:812385209
+http.favicon.hash:1174841451
+http.favicon.hash:366524387
+http.favicon.hash:-38580010
+http.favicon.hash:81586312
+http.favicon.hash:163842882
+http.favicon.hash:-1446794564
+ssl:”brand name” has_vuln:true
+http.favicon.hash:1601194732
+http.favicon.hash:-1439222863

@@ -9,8 +9,9 @@ Dorks for finding bug bounty program pages, scopes and disclosure endpoints.
 | Package | Dorks | Description |
 | --- | ---: | --- |
 | `bbdorks.txt` | 69 | Bug bounty program & security page discovery |
+| `bug-bounty-dorks-sushiwushi.txt` | 36 | Bug bounty program & disclosure scope discovery |
 
-**Folder total: 69 dorks across 1 package.**
+**Folder total: 105 dorks across 2 packages.**
 
 ## Usage
 

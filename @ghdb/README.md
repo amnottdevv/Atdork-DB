@@ -22,8 +22,9 @@ The numbered GHDB categories (footholds → advisories), auto-refreshed **weekly
 | `12_pages_containing_login_portals.txt` | 1,549 | Router & VPN login portals (MikroTik, MetaFrame) |
 | `13_various_online_devices.txt` | 743 | IP cameras, HP printers & remote UIs |
 | `14_advisories_and_vulnerabilities.txt` | 2,219 | CMS advisories & WordPress logins |
+| `ghdb-snapshot-dorkingdb.txt` | 36 | DorkingDB 2024 GHDB snapshot (delta vs live GHDB) |
 
-**Folder total: 7,940 dorks across 14 packages.**
+**Folder total: 7,976 dorks across 15 packages.**
 
 ## Usage
 

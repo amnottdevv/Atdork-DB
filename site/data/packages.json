@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-15T10:49:42Z",
+ "generated": "2026-10-16T01:13:07Z",
  "totals": {
-  "packages": 105,
-  "folders": 29,
-  "dorks": 978613,
-  "bytes": 53820409
+  "packages": 123,
+  "folders": 31,
+  "dorks": 994603,
+  "bytes": 54225338
  },
  "folders": [
   {
@@ -25,8 +25,8 @@
    "name": "bug-bounty",
    "title": "Bug Bounty",
    "intro": "Dorks for finding bug bounty program pages, scopes and disclosure endpoints.",
-   "packages": 1,
-   "dorks": 69
+   "packages": 2,
+   "dorks": 105
   },
   {
    "name": "carding",
@@ -102,22 +102,22 @@
    "name": "ghdb",
    "title": "Google Hacking Database",
    "intro": "The numbered GHDB categories (footholds \u2192 advisories), auto-refreshed **weekly** from [Exploit-DB's GHDB](https://www.exploit-db.com/google-hacking-database).",
-   "packages": 14,
-   "dorks": 7940
+   "packages": 15,
+   "dorks": 7976
   },
   {
    "name": "github",
    "title": "GitHub Secrets",
    "intro": "Dorks for hunting secrets and exposed configuration on GitHub \u2014 credentials, tokens and `.git` artifacts.",
-   "packages": 4,
-   "dorks": 723
+   "packages": 5,
+   "dorks": 819
   },
   {
    "name": "google",
    "title": "Google Dorks (Classic)",
    "intro": "Large classic Google dork collections, kept as-is from their original authors.",
-   "packages": 2,
-   "dorks": 32223
+   "packages": 6,
+   "dorks": 33423
   },
   {
    "name": "iot",
@@ -172,8 +172,8 @@
    "name": "shodan",
    "title": "Shodan",
    "intro": "Shodan filter cheat-sheets and curated query collections for internet-device reconnaissance. Structured `.csv` files are installable data, not directly loadable queries.",
-   "packages": 4,
-   "dorks": 720
+   "packages": 7,
+   "dorks": 3712
   },
   {
    "name": "shopping",
@@ -190,11 +190,25 @@
    "dorks": 19
   },
   {
+   "name": "targets",
+   "title": "Recon Target Lists",
+   "intro": "Domain lists, not dork queries. Each `.csv` is a `domain,category` list meant to be fed into dorking tooling (e.g. SiteDorks-style workflows) or your own scripts \u2014 iterate a list and prepend `site:` to build scoped queries. Structured data: installable, but not query-loadable by AtDork's `--batch-file`.",
+   "packages": 7,
+   "dorks": 11596
+  },
+  {
    "name": "test",
    "title": "Sample / Test",
    "intro": "Sample packages used to demonstrate the package-manager reference syntax.",
    "packages": 1,
    "dorks": 2
+  },
+  {
+   "name": "virustotal",
+   "title": "VirusTotal Intelligence",
+   "intro": "VirusTotal Enterprise / Intelligence search queries for malware hunting \u2014 file, network and behaviour filters that map onto the VT search bar. These are engine queries, not Google dorks: load them with `atdork --database-dork @virustotal/... --database-preview` to preview, then paste into VirusTotal Intelligence.",
+   "packages": 1,
+   "dorks": 34
   },
   {
    "name": "vuln",
@@ -271,6 +285,18 @@
    "preview": "previews/bug-bounty__bbdorks.txt",
    "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@bug-bounty/bbdorks.txt",
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@bug-bounty/bbdorks.txt"
+  },
+  {
+   "ref": "@bug-bounty/bug-bounty-dorks-sushiwushi.txt",
+   "folder": "bug-bounty",
+   "name": "bug-bounty-dorks-sushiwushi.txt",
+   "sha256": "40d0d79a90bded95285b41c9785921abb092d922e6918480a527c34a50290649",
+   "bytes": 2664,
+   "dorks": 36,
+   "desc": "Bug bounty program & disclosure scope discovery",
+   "preview": "previews/bug-bounty__bug-bounty-dorks-sushiwushi.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@bug-bounty/bug-bounty-dorks-sushiwushi.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@bug-bounty/bug-bounty-dorks-sushiwushi.txt"
   },
   {
    "ref": "@carding/cdorks1.txt",
@@ -1053,6 +1079,18 @@
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@ghdb/14_advisories_and_vulnerabilities.txt"
   },
   {
+   "ref": "@ghdb/ghdb-snapshot-dorkingdb.txt",
+   "folder": "ghdb",
+   "name": "ghdb-snapshot-dorkingdb.txt",
+   "sha256": "89508f912e15b9aa9c9a343d248a938503755ecaa495f3fd042f40584c112ded",
+   "bytes": 2236,
+   "dorks": 36,
+   "desc": "DorkingDB 2024 GHDB snapshot (delta vs live GHDB)",
+   "preview": "previews/ghdb__ghdb-snapshot-dorkingdb.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@ghdb/ghdb-snapshot-dorkingdb.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@ghdb/ghdb-snapshot-dorkingdb.txt"
+  },
+  {
    "ref": "@github/git-dorks.txt",
    "folder": "github",
    "name": "git-dorks.txt",
@@ -1075,6 +1113,18 @@
    "preview": "previews/github__git-files-dorks.txt",
    "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@github/git-files-dorks.txt",
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@github/git-files-dorks.txt"
+  },
+  {
+   "ref": "@github/github-dorks-techgaun.txt",
+   "folder": "github",
+   "name": "github-dorks-techgaun.txt",
+   "sha256": "cf07cdf9ce709053bfd49ce40c0164f1444e77e1b4d662230e72aeb76d0b1fb2",
+   "bytes": 2936,
+   "dorks": 96,
+   "desc": "GitHub secret-hunting dorks by data type (techgaun/github-dorks)",
+   "preview": "previews/github__github-dorks-techgaun.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@github/github-dorks-techgaun.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@github/github-dorks-techgaun.txt"
   },
   {
    "ref": "@github/github.txt",
@@ -1101,6 +1151,42 @@
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@github/githubdorks.txt"
   },
   {
+   "ref": "@google/awesome-google-dorks-tobee1406.txt",
+   "folder": "google",
+   "name": "awesome-google-dorks-tobee1406.txt",
+   "sha256": "47dade8cdacbf80721513afefbb56cb31f7cdbdf72ee1c69ebeaff9b73495e6a",
+   "bytes": 2294,
+   "dorks": 63,
+   "desc": "Awesome-Google-Dorks picks, grouped by target type",
+   "preview": "previews/google__awesome-google-dorks-tobee1406.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@google/awesome-google-dorks-tobee1406.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@google/awesome-google-dorks-tobee1406.txt"
+  },
+  {
+   "ref": "@google/google-dorks-proviesec.txt",
+   "folder": "google",
+   "name": "google-dorks-proviesec.txt",
+   "sha256": "30c4c02b685252294af8eb333df7351f24a8ed38b35359c2b11b031d6c73695a",
+   "bytes": 27030,
+   "dorks": 774,
+   "desc": "Google dork collection (Proviesec, curated for web security)",
+   "preview": "previews/google__google-dorks-proviesec.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@google/google-dorks-proviesec.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@google/google-dorks-proviesec.txt"
+  },
+  {
+   "ref": "@google/google-operators-bushidouk.txt",
+   "folder": "google",
+   "name": "google-operators-bushidouk.txt",
+   "sha256": "319e438ec541d67b281fdfb2ba3da8052905960760569c81bb6e0250d14e529f",
+   "bytes": 2258,
+   "dorks": 38,
+   "desc": "Search-operator cheat sheet mapped to file-type targets",
+   "preview": "previews/google__google-operators-bushidouk.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@google/google-operators-bushidouk.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@google/google-operators-bushidouk.txt"
+  },
+  {
    "ref": "@google/googledorks1.txt",
    "folder": "google",
    "name": "googledorks1.txt",
@@ -1123,6 +1209,18 @@
    "preview": "previews/google__googledorks2.txt",
    "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@google/googledorks2.txt",
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@google/googledorks2.txt"
+  },
+  {
+   "ref": "@google/infosec-dorks-spekulatius.txt",
+   "folder": "google",
+   "name": "infosec-dorks-spekulatius.txt",
+   "sha256": "850dce79f7e1c70f513806b1ac9fb616438ff3a8186bc325e2173c0a4f9e2216",
+   "bytes": 15448,
+   "dorks": 325,
+   "desc": "Infosec dorks with [TARGET] placeholders for scoping",
+   "preview": "previews/google__infosec-dorks-spekulatius.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@google/infosec-dorks-spekulatius.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@google/infosec-dorks-spekulatius.txt"
   },
   {
    "ref": "@iot/cctv.txt",
@@ -1329,6 +1427,42 @@
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@sensitive/sensitive-info-dorks.txt"
   },
   {
+   "ref": "@shodan/shodan-appliances-bushidouk.txt",
+   "folder": "shodan",
+   "name": "shodan-appliances-bushidouk.txt",
+   "sha256": "9a3479499dd3707938e716456202362960c5eba88b1f2eff791be42ea3377d10",
+   "bytes": 1612,
+   "dorks": 45,
+   "desc": "Shodan ssl:/port: queries for common appliances",
+   "preview": "previews/shodan__shodan-appliances-bushidouk.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@shodan/shodan-appliances-bushidouk.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@shodan/shodan-appliances-bushidouk.txt"
+  },
+  {
+   "ref": "@shodan/shodan-dorks-dootss.txt",
+   "folder": "shodan",
+   "name": "shodan-dorks-dootss.txt",
+   "sha256": "553ae0f3012f0481f872e020e220e672e56664b5ccd7926eec96ac1bd934d349",
+   "bytes": 3712,
+   "dorks": 114,
+   "desc": "Auto-updating Shodan dorks grouped by category",
+   "preview": "previews/shodan__shodan-dorks-dootss.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@shodan/shodan-dorks-dootss.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@shodan/shodan-dorks-dootss.txt"
+  },
+  {
+   "ref": "@shodan/shodan-dorks-nullfuzz.txt",
+   "folder": "shodan",
+   "name": "shodan-dorks-nullfuzz.txt",
+   "sha256": "b169a87c67d54b2da6e76f7acce60e92ccaa4d441ad6f42b8ff43692daa35299",
+   "bytes": 78253,
+   "dorks": 2833,
+   "desc": "Large Shodan query/fingerprint collection",
+   "preview": "previews/shodan__shodan-dorks-nullfuzz.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@shodan/shodan-dorks-nullfuzz.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@shodan/shodan-dorks-nullfuzz.txt"
+  },
+  {
    "ref": "@shodan/shodan1.txt",
    "folder": "shodan",
    "name": "shodan1.txt",
@@ -1437,6 +1571,90 @@
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@social/linkedindorks.txt"
   },
   {
+   "ref": "@targets/bugbounty-no-platform-targets.csv",
+   "folder": "targets",
+   "name": "bugbounty-no-platform-targets.csv",
+   "sha256": "90c73b555964a140f1528e9d5c50a32dba7bb175edc73c03a5b49c8b3abd1bcc",
+   "bytes": 1849,
+   "dorks": 82,
+   "desc": "Bug bounty domains hosted outside the big platforms",
+   "preview": "previews/targets__bugbounty-no-platform-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/bugbounty-no-platform-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/bugbounty-no-platform-targets.csv"
+  },
+  {
+   "ref": "@targets/netherlands-bugbounty-targets.csv",
+   "folder": "targets",
+   "name": "netherlands-bugbounty-targets.csv",
+   "sha256": "b615dcb3bc2357a732a9677498ede9f7b265c627c54a73f9d68a394859e9fb0e",
+   "bytes": 1608,
+   "dorks": 91,
+   "desc": "Dutch bug bounty domains",
+   "preview": "previews/targets__netherlands-bugbounty-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/netherlands-bugbounty-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/netherlands-bugbounty-targets.csv"
+  },
+  {
+   "ref": "@targets/netherlands-edu-targets.csv",
+   "folder": "targets",
+   "name": "netherlands-edu-targets.csv",
+   "sha256": "fee535ac4c228326e020896e6ae0e980570acd0c55d66382e6de74910319146a",
+   "bytes": 134313,
+   "dorks": 6584,
+   "desc": "Dutch educational institutions",
+   "preview": "previews/targets__netherlands-edu-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/netherlands-edu-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/netherlands-edu-targets.csv"
+  },
+  {
+   "ref": "@targets/netherlands-gov-targets.csv",
+   "folder": "targets",
+   "name": "netherlands-gov-targets.csv",
+   "sha256": "a265c172d5f4f0d7ed2e42e28f512f96a4e9e6160d11aeb7804076ef58343bcb",
+   "bytes": 57273,
+   "dorks": 1996,
+   "desc": "Dutch government domains",
+   "preview": "previews/targets__netherlands-gov-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/netherlands-gov-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/netherlands-gov-targets.csv"
+  },
+  {
+   "ref": "@targets/usa-county-targets.csv",
+   "folder": "targets",
+   "name": "usa-county-targets.csv",
+   "sha256": "a760cc525b8fcb1c41af00ef1a84c41b4b5dfb7a6b9da6a484a968a08ec5c28d",
+   "bytes": 36372,
+   "dorks": 1398,
+   "desc": "US county government domains",
+   "preview": "previews/targets__usa-county-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/usa-county-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/usa-county-targets.csv"
+  },
+  {
+   "ref": "@targets/usa-state-targets.csv",
+   "folder": "targets",
+   "name": "usa-state-targets.csv",
+   "sha256": "eea05bc169c87e9f09af796ef5a0e6864b19a34eaebd7a1b72967eeb4cae1b86",
+   "bytes": 20681,
+   "dorks": 807,
+   "desc": "US state government domains",
+   "preview": "previews/targets__usa-state-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/usa-state-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/usa-state-targets.csv"
+  },
+  {
+   "ref": "@targets/worldwide-targets.csv",
+   "folder": "targets",
+   "name": "worldwide-targets.csv",
+   "sha256": "8298b5079bf55bebce2f30f40aa5b77c1dcec343886f116d68194601e48066de",
+   "bytes": 13145,
+   "dorks": 638,
+   "desc": "International starter list, grouped by site category",
+   "preview": "previews/targets__worldwide-targets.csv",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@targets/worldwide-targets.csv",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@targets/worldwide-targets.csv"
+  },
+  {
    "ref": "@test/c@1_test.txt",
    "folder": "test",
    "name": "c@1_test.txt",
@@ -1447,6 +1665,18 @@
    "preview": "previews/test__c_1_test.txt",
    "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@test/c@1_test.txt",
    "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@test/c@1_test.txt"
+  },
+  {
+   "ref": "@virustotal/vti-dorks-neo23x0.txt",
+   "folder": "virustotal",
+   "name": "vti-dorks-neo23x0.txt",
+   "sha256": "0cc2321c1a9739e084ecc8181dcce202cf4c7585298f5a14d58a85fe87174a17",
+   "bytes": 1245,
+   "dorks": 34,
+   "desc": "Curated VT Intelligence queries (Neo23x0/vti-dorks)",
+   "preview": "previews/virustotal__vti-dorks-neo23x0.txt",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@virustotal/vti-dorks-neo23x0.txt",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@virustotal/vti-dorks-neo23x0.txt"
   },
   {
    "ref": "@vuln/vuln-server-dorks.txt",

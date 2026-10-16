@@ -1,0 +1,20 @@
+# Source: https://github.com/nullfuzz-pentest/shodan-dorks (dorks.txt)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+aa3939fc357723135870d5036b12a67097b03309
+app="HIKVISION-综合安防管理平台"
+"AppleHttpServer"
+"AutobahnPython"
+basic realm="Kettle"
+Bullwark
+cassandra
+Chromecast
+"ClickShareSession"
+"/config/log_off_page.htm"
+'"connection: upgrade"'
+"cowboy"
+cpe:"cpe:2.3:a:apache:cassandra"
+cpe:"cpe:2.3:a:backdropcms:backdrop"
+cpe:"cpe:2.3:a:bolt:bolt"
+cpe:"cpe:2.3:a:cisco:sd-wan"
+cpe:"cpe:2.3:a:ckeditor:ckeditor"
+cpe:"cpe:2.3:a:cmsimple:cmsimple"

@@ -1,0 +1,20 @@
+# Source: https://github.com/techgaun/github-dorks (github-dorks.txt)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+"GROQ_API_KEY" path:.env
+"MISTRAL_API_KEY" path:.env
+"COHERE_API_KEY" path:.env
+"GEMINI_API_KEY" path:.env
+"REPLICATE_API_TOKEN" path:.env
+"TOGETHER_API_KEY" path:.env
+"OPENROUTER_API_KEY" path:.env
+"PPLX_API_KEY" path:.env
+"PINECONE_API_KEY" path:.env
+"WEAVIATE_API_KEY" path:.env
+"QDRANT_API_KEY" path:.env
+"LANGCHAIN_API_KEY" path:.env
+"MODAL_TOKEN_SECRET" path:.env
+"FAL_KEY" path:.env
+"CLOUDFLARE_API_TOKEN" path:.env
+"DIGITALOCEAN_ACCESS_TOKEN" path:.env
+"dop_v1_"
+"PULUMI_ACCESS_TOKEN" path:.env

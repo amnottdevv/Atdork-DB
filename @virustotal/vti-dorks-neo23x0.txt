@@ -1,0 +1,36 @@
+# Source: https://github.com/Neo23x0/vti-dorks (README)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+name:payload positives:5-
+name:exploit positives:5-
+name:obfus NOT tag:android
+metadata:"Microsoft Corporation" AND tag:peexe AND ( packer:rar OR packer:upx OR packer:themida OR packer:asprox ) AND positives:10-
+name:myvtfile.exe
+itw:".gov" positives:5+
+subspan:300- positives:5+
+name:mimi* positives:5-
+name:*katz.exe positives:5-
+engines:mimikatz positives:5-
+resource:"PKCS7" and resource:"X509"
+submitter:DE positives:2+ positives:10- (tag:doc OR tag:docx)
+submitter:TW positives:1+ positives:20- filename:*.eml submissions:1
+submitter:QA positives:2+
+submitter:IL name:syria positives:2+
+ls:2019-01-16+ type:dmg positives:2+ tag:signed
+tag:elf AND p:2+ AND engines:Mirai
+tag:elf AND p:5+ NOT engines:Mirai NOT engines:DDOS
+lastline:RANSOM
+c2ae:STEALER and tag:peexe
+content:"sekurlsa::logonpasswords"
+content:"click enable editing"
+content:"click enable content"
+content:"] Shellcode"
+similar-to:<hashofthefile>
+code-similar-to:<hashofthefile>
+imphash:<IATHash>
+rich_pe_header_hash:<Richhash>
+tlsh:<tlshash>
+ssdeep:<ssdeep_hash>
+behash:<hashofthefile>
+main_icon_dhash:<icon_hash>
+netguid:<GUID>
+permhash:<permhash>

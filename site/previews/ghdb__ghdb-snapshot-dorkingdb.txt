@@ -1,0 +1,20 @@
+# Source: https://github.com/Just-Roma/DorkingDB (Lists/Google/exploit_db_google_dorks_sorted.json, 2024 snapshot)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+intitle: "/userfiles'""
+intext:"Powered by Virtual Airlines Manager [v2.6.2]"
+# Google Dork: intitle:"index of" "admin" "cgi-bin"
+# Description: site:gov.in filetype:xlsx "password"
+# Exploit Title: [SF Dork]
+inurl:"\wp-content\plugins\photo-gallery"
+inurl:"\wp-content\plugins\all-in-one-seo-pack"
+vBulletin 5.0 < 5.5.4 - Unauthenticated Remote Code Execution
+:inurl:mj_wwwusr
+intitle:PhpMyAdmin inurl:error.php
+"Powered by WebStudio"
+inurl:"contentPage.php?id=" & inurl:"displayResource.php?id=" & ...
+allinurl: Category.php?IndustrYID=
+"index.php?option=com_chronoconnectivity" / "com_chronoconnectivity"
+Powered by Webiz inurl:'wmt/webpages'
+"You have not provided a survey identification number" ERROR -xoops.org "please contact"
+http://www.google.com/search?q=intitle:%22WEB//NEWS+Personal+Newsmanagement%22+intext:%22%C2%A9+2002-2004+by+Christian+Scheb+-+Stylemotion.de%22%2B%22
+intitle:"Looking Glass v20040427" "When verifying an URL check one of those"

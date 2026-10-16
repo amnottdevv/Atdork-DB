@@ -1,12 +1,13 @@
 # Atdork-DB index v1
-# generated: 2026-10-15T10:49:42Z
-# entries: 105
-# total-dorks: 978613
+# generated: 2026-10-16T01:13:07Z
+# entries: 123
+# total-dorks: 994603
 @admin/adminpanel-dorks.txt|a7496acb4e22b459eb8a869fa95d3904a19484d9a1778043be291be741b82f02|8524|447|Adminpanel Dorks
 @admin/awstats.txt|5a36794cf5cf63618b49c02492786955ed5f4dbe634966b108e50b7159e36838|367|15|Awstats
 @bing/bing1.txt|0f5f64695ae5aeba9cc794a6f4f8ad476a29a7e915de7005f6fe1b26871f8c67|14232|195|Bing1
 @bing/bing2.txt|167daa31c5697d3b9278f9b9998c9d19ed951766b6562a64e06af47deeb81cdb|21004|310|Bing2
 @bug-bounty/bbdorks.txt|6aaf3a8e40cad5732caa7fa559da3aee433de107a35a3ec380456ee9b1485937|2575|69|Bbdorks
+@bug-bounty/bug-bounty-dorks-sushiwushi.txt|40d0d79a90bded95285b41c9785921abb092d922e6918480a527c34a50290649|2664|36|Bug Bounty Dorks Sushiwushi
 @carding/cdorks1.txt|31901471b4eae76cdd72b22d2ec0d74dd6a72dc00d872fc84f6649262705fd29|58006|2341|Cdorks1
 @carding/cdorks2.txt|dd6a3501775137c3ef9d81552447f242fbc1d0ff74d62a8777c25d8fc23eab95|30053|925|Cdorks2
 @censys/censysdork.txt|d0997b976f5cfa421bb65c3d0b2ea83402b7990b82ff48451fc454e1a59bf1af|13165|221|Censysdork
@@ -72,12 +73,18 @@
 @ghdb/12_pages_containing_login_portals.txt|a01d7197638f50a6aac548bc8133077d85255c51304f3ca36d1018fd6f991c82|64044|1549|12 Pages Containing Login Portals
 @ghdb/13_various_online_devices.txt|e2430f20c222c3c99660cc0c6f41cbc68fc97c984be16c44b6dc0cdf1079405a|33674|743|13 Various Online Devices
 @ghdb/14_advisories_and_vulnerabilities.txt|250ecff921724e985841159c6d5f219801a407aeb1144432ab6f6c6de6043288|79460|2219|14 Advisories And Vulnerabilities
+@ghdb/ghdb-snapshot-dorkingdb.txt|89508f912e15b9aa9c9a343d248a938503755ecaa495f3fd042f40584c112ded|2236|36|GHDB Snapshot Dorkingdb
 @github/git-dorks.txt|add9d82e8800829fae1cf466d175686013d1af5f8984f6b9ae513935e3072cb6|8848|513|Git Dorks
 @github/git-files-dorks.txt|7e93435e5bf73b3f997b6da6b13d1817742a0b4335c6308b36fc2b386b4b9473|348|11|Git Files Dorks
+@github/github-dorks-techgaun.txt|cf07cdf9ce709053bfd49ce40c0164f1444e77e1b4d662230e72aeb76d0b1fb2|2936|96|Github Dorks Techgaun
 @github/github.txt|8342c806e155b66967fec9b7c587075f5016e6235eff590a05dc139558c636e8|879|19|Github
 @github/githubdorks.txt|209ab2fba3f1917b89da40c4648a312cd4a8cdbc958b155248795ebcfb621968|5046|180|Githubdorks
+@google/awesome-google-dorks-tobee1406.txt|47dade8cdacbf80721513afefbb56cb31f7cdbdf72ee1c69ebeaff9b73495e6a|2294|63|Awesome Google Dorks Tobee1406
+@google/google-dorks-proviesec.txt|30c4c02b685252294af8eb333df7351f24a8ed38b35359c2b11b031d6c73695a|27030|774|Google Dorks Proviesec
+@google/google-operators-bushidouk.txt|319e438ec541d67b281fdfb2ba3da8052905960760569c81bb6e0250d14e529f|2258|38|Google Operators Bushidouk
 @google/googledorks1.txt|a7243ffc91001fd8abcb5ce131b1baeb94da8df4d75dbd5159f080f2e3c6e3b0|459014|13760|Googledorks1
 @google/googledorks2.txt|ca38adcb1acd83e61ed2cc67a03b897cc67f68ca2a06faccbc9a04a0f914dfa3|461705|18463|Googledorks2
+@google/infosec-dorks-spekulatius.txt|850dce79f7e1c70f513806b1ac9fb616438ff3a8186bc325e2173c0a4f9e2216|15448|325|Infosec Dorks Spekulatius
 @iot/cctv.txt|35b8bba8c23cdd6fc6b36dcd5ce4d5271596bcf80572067763e32dfb7fc029d5|12450|434|Cctv
 @iot/cctv2.json|00fefd9608e37e492493d1264ee41cae07749e48f6401ef8bfdae1fc3ccdcdbc|8214|153|Cctv2
 @iot/cctv3.txt|9086d9c501af165c255b228075cf4359d0f0fea8d107695d9de5d74920c0567f|3288|64|Cctv3
@@ -95,6 +102,9 @@
 @sensitive/sensitive-dirs-dorks.txt|63472de196788ec7b9f3635c4dd8aaa18f24b1c05bf0203c64d743e2471832b1|16935|444|Sensitive Dirs Dorks
 @sensitive/sensitive-files-dorks.txt|80b6d83fcd0baa00194b32c4b46efbf019155f879ac6b501e69e80233aebc455|2696|84|Sensitive Files Dorks
 @sensitive/sensitive-info-dorks.txt|ed674a117bf193877f9a544389d18ccacb11d68915ecdd69df4b8b8ce811f8c4|73727|1866|Sensitive Info Dorks
+@shodan/shodan-appliances-bushidouk.txt|9a3479499dd3707938e716456202362960c5eba88b1f2eff791be42ea3377d10|1612|45|Shodan Appliances Bushidouk
+@shodan/shodan-dorks-dootss.txt|553ae0f3012f0481f872e020e220e672e56664b5ccd7926eec96ac1bd934d349|3712|114|Shodan Dorks Dootss
+@shodan/shodan-dorks-nullfuzz.txt|b169a87c67d54b2da6e76f7acce60e92ccaa4d441ad6f42b8ff43692daa35299|78253|2833|Shodan Dorks Nullfuzz
 @shodan/shodan1.txt|9e6c78f24a194436a7d6901eb74b688dd31434be67570ea8b6c2ab65dc956922|5817|189|Shodan1
 @shodan/shodan2.txt|50f4c61309a8eb46dfb481d067c0a65a6b15e60035b51ccf6f75065fb93280d5|13106|233|Shodan2
 @shodan/shodan_ace-ics-iot-dorks.csv|77cdc1f3eb1118bc1413071e8a91facb174ac330d4df80944cbefff4b99df982|8814|130|Shodan Ace Ics IoT Dorks
@@ -104,6 +114,14 @@
 @shopping/webstore-dorks.txt|fb373efdc8cad621009f532262334abb0d7840200cf1531dd1f0450558422a03|7859|340|Webstore Dorks
 @social/discord-tokens-dorks.txt|9af78d596a080c8ac1e1ef3625b9139aa88ea60a8699291a48a56beaee8dcabc|305|7|Discord Tokens Dorks
 @social/linkedindorks.txt|78cd4fce0320db4f505581e7628a886998d1e8c5c5f9b472a1316b9cfefb41a4|1071|12|Linkedindorks
+@targets/bugbounty-no-platform-targets.csv|90c73b555964a140f1528e9d5c50a32dba7bb175edc73c03a5b49c8b3abd1bcc|1849|82|Bugbounty No Platform Targets
+@targets/netherlands-bugbounty-targets.csv|b615dcb3bc2357a732a9677498ede9f7b265c627c54a73f9d68a394859e9fb0e|1608|91|Netherlands Bugbounty Targets
+@targets/netherlands-edu-targets.csv|fee535ac4c228326e020896e6ae0e980570acd0c55d66382e6de74910319146a|134313|6584|Netherlands Edu Targets
+@targets/netherlands-gov-targets.csv|a265c172d5f4f0d7ed2e42e28f512f96a4e9e6160d11aeb7804076ef58343bcb|57273|1996|Netherlands Gov Targets
+@targets/usa-county-targets.csv|a760cc525b8fcb1c41af00ef1a84c41b4b5dfb7a6b9da6a484a968a08ec5c28d|36372|1398|Usa County Targets
+@targets/usa-state-targets.csv|eea05bc169c87e9f09af796ef5a0e6864b19a34eaebd7a1b72967eeb4cae1b86|20681|807|Usa State Targets
+@targets/worldwide-targets.csv|8298b5079bf55bebce2f30f40aa5b77c1dcec343886f116d68194601e48066de|13145|638|Worldwide Targets
 @test/c@1_test.txt|7231aa0e66c7c6d17f8f73c78aa877c5d22201be9aa9cb8a8b1141d0a592139d|38|2|C@1 Test
+@virustotal/vti-dorks-neo23x0.txt|0cc2321c1a9739e084ecc8181dcce202cf4c7585298f5a14d58a85fe87174a17|1245|34|Vti Dorks Neo23x0
 @vuln/vuln-server-dorks.txt|a693e7974587c3fb0ccb98e1e0e0387c0aa66d7270de82b9cacdf69295b62de7|5245|112|Vuln Server Dorks
 @yandex/yandex.txt|684ad9663c3b8ed0dbf38777f0843e7018f2f587bbb95841c2a4baae353f12ba|555|10|Yandex

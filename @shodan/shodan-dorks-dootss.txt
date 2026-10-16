@@ -1,0 +1,123 @@
+# Source: https://github.com/dootss/shodan-dorks (dorks.yaml)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+# == Cameras ==
+camera
+webcam has_screenshot:true
+has_screenshot:true IP Webcam
+server: webcamxp
+server: "webcam 7"
+title:"blue iris remote view"
+title:"ui3 -"
+title:"Network Camera VB-M600"
+product:"Yawcam webcam viewer httpd"
+title:"IPCam Client"
+server: GeoHttpServer
+server: VVTK-HTTP-Server
+title:"Avigilon"
+ACTi
+WWW-Authenticate: "Merit LILIN Ent. Co., Ltd"
+server: "i-Catcher Console"
+Netwave IP Camera Content-Length: 2574
+200 ok dvr port:"81"
+WVC80N
+product:"Hikvision IP Camera"
+title:"ContaCam"
+# == Industrial Control Systems ==
+Server: Prismview Player
+"in-tank inventory" port:10001
+P372 "ANPR enabled"
+mikrotik streetlight
+"Cisco IOS" "ADVIPSERVICESK9_LI-M"
+"[2J[H Encartele Confidential"
+"Server: gSOAP/2.8" "Content-Length: 583"
+title:"Slocum Fleet Mission Control"
+"Server: CarelDataServer" "200 Document follows"
+http.title:"Nordex Control" "Windows 2000 5.0 x86" "Jetty/3.1 (JSP 1.1; Servlet 2.2; java 1.6.0_14)"
+"[1m[35mWelcome on console"
+"DICOM Server Response" port:104
+"Server: EIG Embedded Web Server" "200 Document follows"
+"Siemens, SIMATIC" port:161
+"Server: Microsoft-WinCE" "Content-Length: 12581"
+"HID VertX" port:4070
+"log off" "select the appropriate"
+title:"xzeres wind"
+"html:"PIPS Technology ALPR Processors""
+"port:502"
+"port:1911,4911 product:Niagara"
+"port:18245,18246 product:"general electric""
+"port:5006,5007 product:mitsubishi"
+"port:2455 operating system"
+"port:102"
+"port:47808"
+"port:5094 hart-ip"
+"port:9600 response code"
+"port:2404 asdu address"
+"port:20000 source address"
+"port:44818"
+"port:1962 PLC"
+"port:789 product:"Red Lion Controls""
+"port:20547 PLC"
+"authentication disabled" "RFB 003.008"
+"authentication disabled" port:5900,5901
+# == Network Infastructure ==
+product:MySQL
+mongodb port:27017
+"MongoDB Server Information" port:27017
+"Set-Cookie: mongo-express=" "200 OK"
+kibana content-length:217
+port:"9200" all:elastic
+port:5432 PostgreSQL
+port:"5984"+Server: "CouchDB/2.1.0"
+title:"Weave Scope" http.favicon.hash:567176827
+"X-Jenkins" "Set-Cookie: JSESSIONID" http.title:"Dashboard"
+"Docker Containers:" port:2375
+"Docker-Distribution-Api-Version: registry" "200 OK" -gitlab
+"dnsmasq-pi-hole" "Recursion: enabled"
+"root@" port:23 -login -password -name -Session
+Lantronix password port:30718 -secured
+"Citrix Applications:" port:1604
+"smart install client active"
+PBX "gateway console" -password port:23
+http.title:"- Polycom" "Server: lighttpd"
+"Polycom Command Shell" -failed port:23
+# == Printers ==
+printer
+"HP-ChaiSOE" port:"80"
+"Location: /main/main.html" debut
+port:161 hp
+port:23 "Password is not set"
+"Laser Printer FTP Server"
+Printer Type: Lexmark
+http 200 server epson -upnp
+"Server: EPSON-HTTP" "200 OK"
+ssl:"Xerox Generic Root"
+"Server: CANON HTTP Server"
+title:"OctoPrint" -title:"Login" http.favicon.hash:1307375944
+# == Files and Directories ==
+http.title:"Index of /"
+port:80 title:"Index of /"
+"Anonymous access allowed" port:"21"
+vsftpd 2.3.4
+ftp port:"10000"
+"Authentication: disabled" port:445 product:"Samba"
+"QuickBooks files OverNetwork" -unix port:445
+filezilla port:"21"
+# == Compromised devices and websites ==
+"hacked"
+"hacked by"
+http.title:"0wn3d by"
+"HACKED-ROUTER"
+port:"27017" "send_bitcoin_to_retrieve_the_data"
+bitcoin has_screenshot:true
+port:4444 system32
+"attention" "encrypted" port:3389
+"HACKED-ROUTER-HELP-SOS-HAD-DEFAULT-PASSWORD"
+"HACKED FTP server"
+# == Miscellaneous ==
+"antminer"
+http.title:"Tesla"
+http.title:"dashboard"
+http.title:"control panel"
+"Minecraft Server" "protocol 340" port:25565
+net:175.45.176.0/22,210.52.109.0/24,77.94.35.0/24
+"Server: Bomgar" "200 OK"

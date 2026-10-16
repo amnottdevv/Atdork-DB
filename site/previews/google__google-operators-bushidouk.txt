@@ -1,0 +1,20 @@
+# Source: https://github.com/BushidoUK/OSINT-SearchOperators (GoogleDorks.csv)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+intitle:”index of/” “.apk”
+intitle:”index of/” “.exe”
+intitle:”index of/” ext:bat
+site:t.me/joinchat/
+site:anonfiles.com "keyword"
+site:ufile.io "keyword"
+filetype:pdf AND "confidential"
+ext:ppt | ext:pptx AND "confidential"
+ext:pdf intext:"example.com"
+ext:doc | ext:docx intext:"default password is"
+ext:xls | ext:xlsx intext:"default password is"
+view-source:https://example.com/admins.php
+site:http://s3.amazonaws.com {company_name}
+inurl: blob.core.windows.net intitle:index of
+site:drive.google.com +"drive/folders"
+intitle:{company_name} site:https://twitter.com -inurl:search
+filetype:sql intext:client AND password
+inurl:ftp -inurl:http -inurl:https {company name}

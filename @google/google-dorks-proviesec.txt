@@ -1,0 +1,776 @@
+# Source: https://github.com/Proviesec/google-dorks (all-google-dorks.txt)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+"-- MySQL dump" "Server version" "Table structure for table"
+"anthropic" "api_key"
+"BEGIN OPENSSH PRIVATE KEY"
+"BEGIN RSA PRIVATE KEY"
+"claude" "api_key"
+"client = OpenAI("
+"cohere" "api_key"
+"Exception" "stack trace"
+"Fatal error" "on line"
+"firebase" "apiKey" filetype:json
+"firebase" "private_key"
+"isa registered trademark of the Wikimedia Foundation, Inc.,"
+"key-" "mailgun"
+"Log in / createaccount"
+"Login Pages" "inurl:login"
+"Login required to edit"
+"login" "user" "password"
+"Main Page""discussion""edit"
+"mongodb+srv://"
+"mongodb://" "password"
+"new OpenAI("
+"NEXT_PUBLIC_" filetype:env
+"OpenAI("
+"openai.api_key"
+"openai.chat.completions.create"
+"openai.ChatCompletion.create"
+"openai.createCompletion"
+"OPENAI_API_KEY"
+"OPENAI_KEY"
+"OPENAI_SECRET"
+"OPENAI_TOKEN"
+"Parent Directory" "Last modified" ftp
+"Parent Directory" "Last modified" jira
+"Parent Directory" "Last modified" monitoring
+"Parent Directory" "Last modified" wikipedia
+"Please sign in" "login"
+"Powered by BlogEngine.NET 1.4.5.0"
+"powered by BlogEngine.NET"
+"Powered by Drupal"
+"Powered by"
+"REACT_APP_" filetype:env
+"Report a Vulnerability"
+"role\": \"system\"" "openai"
+"SG." "api_key"
+"sk-" "openai"
+"sk_live"
+"sk_test"
+"system prompt" "openai"
+"There is currently no text in this page, you can search for this page title in other pages or edit this page"
+"This page has been accessed"
+"This page has beenaccessed""Privacy policy"
+"This page has beenaccessed""Privacy policy""wiki"
+"This page was last modified on"
+"Toolbox""This page was last modified
+"TYPO3 CMS login"
+"Welcome to Grafana" inurl:/orgid
+"wiki inurl:.edu"
+"wiki/index.php?title=Special:Userlogin&amp;returnto"
+"Wiki:About"
+"xoxb-"
+"xoxp-"
+"You are an AI assistant" "openai"
+-pub -pool intitle:\"index of\" \"Served by\" \"Web Server\"
+.php?module=
+?search=
+\"index of /private\" -site:net -site:com -site:org
+\"Powered by 123LogAnalyzer\"
+\"Powered by phpBB\" inurl:\"index.php?s\" OR inurl:\"index.php?style\"
+all.php?redirect=
+allintext:\"Index Of\" \"sftp-config.json\"
+allintext:username password filetype:log
+allintitle:\"Pi-hole Admin Console\"
+allinurl:".com/mediawiki/index.php"
+allinurl:".com/wiki/index.php"
+allinurl:".edu/mediawiki/index.php"
+allinurl:".edu/wiki/index.php"
+allinurl:".info/mediawiki/index.php"
+allinurl:".info/wiki/index.php"
+allinurl:".net/mediawiki/index.php"
+allinurl:".net/wiki/index.php"
+allinurl:".org/mediawiki/index.php"
+allinurl:".org/wiki/index.php"
+allinurl:"http://mediawiki."
+allinurl:"http://wiki."
+allinurl:"http://wikka."
+ARTIFACTS_AWS_ACCESS_KEY_ID=
+ARTIFACTS_AWS_SECRET_ACCESS_KEY=
+aws SECRET_KEY
+aws session_token access_key
+aws-secret
+AWS_S3_SECRET_ACCESS_KEY
+aws_secret_access_key
+AWS_SECURITY_TOKEN
+AWS_SES_ACCESS_KEY_ID=
+AWS_SES_SECRET_ACCESS_KEY=
+AWSSECRETKEY=
+company filetype:cvs
+company filetype:xls
+configuration filetype:txt
+create table  filetype:sql
+ext:php | intitle:phpinfo \"published by the PHP Group\"
+filename:config pass
+filename:config secret
+filename:config.php password
+filename:configuration
+filename:setting
+filetyp:php
+filetype:abk
+filetype:backup
+filetype:bak
+filetype:conf
+filetype:db
+filetype:env "ANGULAR_"
+filetype:env "ANTHROPIC_API_KEY"
+filetype:env "ANTHROPIC_KEY"
+filetype:env "API_KEY"
+filetype:env "AWS_ACCESS_KEY_ID"
+filetype:env "AWS_SECRET_ACCESS_KEY"
+filetype:env "AZURE_CLIENT_ID"
+filetype:env "AZURE_CLIENT_SECRET"
+filetype:env "AZURE_KEY"
+filetype:env "CIRCLE_CI_TOKEN"
+filetype:env "CIRCLE_TOKEN"
+filetype:env "COHERE_API_KEY"
+filetype:env "COHERE_KEY"
+filetype:env "DATABASE_URL"
+filetype:env "DIGITALOCEAN_TOKEN"
+filetype:env "DISCORD_BOT_TOKEN"
+filetype:env "DISCORD_TOKEN"
+filetype:env "DO_TOKEN"
+filetype:env "GOOGLE_APPLICATION_CREDENTIALS"
+filetype:env "HEROKU_API_KEY"
+filetype:env "HEROKU_TOKEN"
+filetype:env "HUGGINGFACE_API_KEY"
+filetype:env "HUGGINGFACEHUB_API_TOKEN"
+filetype:env "JWT_SECRET"
+filetype:env "MAILGUN_API_KEY"
+filetype:env "MAILGUN_KEY"
+filetype:env "MAILGUN_SECRET"
+filetype:env "MONGO_URI"
+filetype:env "MONGODB_PASSWORD"
+filetype:env "MONGODB_URI"
+filetype:env "NEXT_"
+filetype:env "NEXT_PUBLIC_"
+filetype:env "OPENAI_API_KEY"
+filetype:env "OPENAI_KEY"
+filetype:env "OPENAI_SECRET"
+filetype:env "OPENAI_TOKEN"
+filetype:env "PASSWORD"
+filetype:env "REACT_APP_"
+filetype:env "REDIS_URL"
+filetype:env "REPLICATE_API_TOKEN"
+filetype:env "SECRET"
+filetype:env "SENDGRID_API_KEY"
+filetype:env "SENDGRID_KEY"
+filetype:env "SENDGRID_PASSWORD"
+filetype:env "SLACK_API_TOKEN"
+filetype:env "SLACK_TOKEN"
+filetype:env "SLACK_WEBHOOK"
+filetype:env "STRIPE_API_KEY"
+filetype:env "STRIPE_PUBLISHABLE_KEY"
+filetype:env "STRIPE_SECRET"
+filetype:env "STRIPE_SECRET_KEY"
+filetype:env "TOKEN"
+filetype:env "TRAVIS_TOKEN"
+filetype:env "TWILIO_ACCOUNT_SID"
+filetype:env "TWILIO_API_KEY"
+filetype:env "TWILIO_AUTH_TOKEN"
+filetype:gz backup
+filetype:json "angular" "apiKey"
+filetype:json "anthropic"
+filetype:json "azure" "clientSecret"
+filetype:json "cohere" "api_key"
+filetype:json "digitalocean" "token"
+filetype:json "discord" "token"
+filetype:json "firebase" "apiKey"
+filetype:json "firebase" "private_key"
+filetype:json "firebase" "serviceAccount"
+filetype:json "gcp" "credentials"
+filetype:json "google" "private_key"
+filetype:json "heroku" "api_key"
+filetype:json "mailgun" "api_key"
+filetype:json "openai"
+filetype:json "sendgrid" "api_key"
+filetype:json "service_account" "private_key"
+filetype:json "slack" "token"
+filetype:json "stripe" "secret"
+filetype:json "twilio" "auth_token"
+filetype:log
+filetype:log "Authorization:"
+filetype:log "AWS_ACCESS_KEY_ID"
+filetype:log "AWS_SECRET_ACCESS_KEY"
+filetype:log "Bearer "
+filetype:log "build error"
+filetype:log "ConnectionManager"
+filetype:log "containerd"
+filetype:log "CRON"
+filetype:log "docker"
+filetype:log "firewall"
+filetype:log "GitLab Runner"
+filetype:log "ipsec"
+filetype:log "Jenkins"
+filetype:log "kube-apiserver"
+filetype:log "kubernetes"
+filetype:log "mysql error"
+filetype:log "ORA-"
+filetype:log "passwd="
+filetype:log "password="
+filetype:log "PDOException"
+filetype:log "PHP Fatal error"
+filetype:log "PHP Parse error"
+filetype:log "PHP Warning"
+filetype:log "pipeline failed"
+filetype:log "pod error"
+filetype:log "PostgreSQL"
+filetype:log "SESSIONID"
+filetype:log "Set-Cookie"
+filetype:log "SQLSTATE"
+filetype:log "SSL error"
+filetype:log "stack trace"
+filetype:log "sudo"
+filetype:log "TLS handshake failed"
+filetype:log "token="
+filetype:log "Uncaught Exception"
+filetype:log "VPN"
+filetype:log cron
+filetype:log inurl:access.log
+filetype:log inurl:apache
+filetype:log inurl:error.log
+filetype:log inurl:httpd
+filetype:log password
+filetype:map "webpack://"
+filetype:old
+filetype:orig
+filetype:pem "PRIVATE KEY"
+filetype:php inurl=query
+filetype:php inurl=search
+filetype:pptx
+filetype:sql
+filetype:sql inurl:wp-content
+filetype:sql inurl:wp-content/backup-
+filetype:sql inurl:wp-content/uploads
+filetype:sql username
+filetype:sqlite
+filetype:sqlite3
+filetype:swp
+filetype:tar backup
+filetype:tmp
+filetype:toml "openai"
+filetype:txt inurl:wp-config
+filetype:xml "password"
+filetype:xml "secret"
+filetype:yaml ".github/workflows"
+filetype:yaml ".travis.yml"
+filetype:yaml "anthropic"
+filetype:yaml "circleci" "token"
+filetype:yaml "openai"
+filetype:yaml secret
+filetype:yml ".github/workflows"
+filetype:yml "openai"
+filetype:yml password
+filetype:zip backup
+hostname user password filetype:xml
+index.php? inurl:&
+index.php? inurl=id
+index.php? inurl=page
+index.php? inurl=query
+index.php? inurl=search
+intext:"IMail Server Web Messaging" intitle:"login"
+intext:\"Healthy\" + \"Product model\" + \" Client IP\" + \"Ethernet\"
+intext:\"index of /\" \"Index of\" access_log
+intext:\"SonarQube\" + \"by SonarSource SA.\" + \"LGPL v3\"
+intext:\"This is the default welcome page used to test the correct operation of the Apache
+intext:Joomla inurl:index.php/login
+intext:security hackerone
+intitle:"Admin Login"
+intitle:"Admin Panel" inurl:login
+intitle:"Dashboard Login"
+intitle:"Elastic" inurl:"/login"
+intitle:"GitHub Enterprise" inurl:"/login"
+intitle:"GitLab" inurl:"/users/sign_in"
+intitle:"GitLab" inurl:/users/sign_in
+intitle:"Grafana - Home" inurl:/orgid
+intitle:"Grafana" "Forgot your password"
+intitle:"Grafana" inurl:"/login"
+intitle:"Grafana" inurl:/login
+intitle:"GraphQL Playground"
+intitle:"index of " Drupal Author: Coudry hugo
+intitle:"Index of" ".git"
+intitle:"index of" "error.log"
+intitle:"index of" "log"
+intitle:"index of" "nginx"
+intitle:"Index of" /wp-content/uploads
+intitle:"Index of" backup
+intitle:"Index of" backups
+intitle:"index of" cleanup.log
+intitle:"Index of" database
+intitle:"Index of" dump
+intitle:"index of" filetype:log
+intitle:"index of" inurl:app.conf
+intitle:"index of" inurl:conf
+intitle:"index of" inurl:ftp
+intitle:"Jenkins" "Sign in"
+intitle:"Jenkins" inurl:"/login"
+intitle:"Jenkins" inurl:/login
+intitle:"Keycloak" "Account Management"
+intitle:"Keycloak" inurl:"/auth"
+intitle:"Kibana" inurl:"/login"
+intitle:"Kibana" inurl:/login
+intitle:"SSL VPN" "Login"
+intitle:"TYPO3 CMS"
+intitle:"Welcome to Grafana"
+intitle:\"index of\" \"debug.log\" OR \"debug-log\"
+intitle:\"index of\" \"docker.yml\"
+intitle:\"index of\" \"powered by apache \" \"port 80\"
+intitle:\"index of\" \"Served by Sun-ONE\"
+intitle:\"index of\" \"server at\"
+intitle:\"Lists Web Service\"
+intitle:\"Microsoft Internet Information Services 8\" -IIS
+intitle:\"Monsta ftp\" intext:\"Lock session to IP\"
+intitle:\"Web Server's Default Page\" intext:\"hosting using Plesk\" -www
+intitle:\"Welcome to JBoss\"
+intitle:\"Welcome to nginx!\" intext:\"Welcome to nginx on Debian!\" intext:\"Thank you for\"
+intitle:Grafana inurl:orgid
+intitle:"PHP Version" intext:"PHP Version"
+inurl:
+inurl:"/typo3conf/ext/pw_highslide_gallery/"
+inurl:"/user/register" "Powered by Drupal"
+inurl:"/user/reset"
+inurl:"/wp-content/plugins/age-verification/age-verification.php"
+inurl:"/wp-content/plugins/fgallery/"
+inurl:"/wp-content/plugins/inboundio-marketing/"
+inurl:"/wp-content/plugins/seo-pressor/classes/"
+inurl:"/wp-content/plugins/video-synchro-pdf"
+inurl:"/wp-content/plugins/wpSS/"
+inurl:"plugins/wp-db-backup/wp-db-backup.php"
+inurl:"typo3"
+inurl:"wiki/index.php?title="
+inurl:"wp-content/pluginsall-in-one-seo-pack"
+inurl:& intext:admin intext:login
+inurl:& intext:search
+inurl:& inurl:city
+inurl:& inurl:competition
+inurl:& inurl:date
+inurl:& inurl:form
+inurl:& inurl:game
+inurl:& inurl:input
+inurl:& inurl:next
+inurl:& inurl:query
+inurl:& inurl:quiz
+inurl:& inurl:search
+inurl:& inurl:search inurl:q
+inurl:& inurl:search inurl:s
+inurl:& inurl:suche
+inurl:& inurl:survey
+inurl:& inurl:target
+inurl:& inurl:test
+inurl:& inurl:title
+inurl:& inurl:topic
+inurl:& inurl=alert
+inurl:& inurl=body
+inurl:& inurl=callback
+inurl:& inurl=content
+inurl:& inurl=continue
+inurl:& inurl=data
+inurl:& inurl=dest
+inurl:& inurl=destination
+inurl:& inurl=error
+inurl:& inurl=filter
+inurl:& inurl=html
+inurl:& inurl=info
+inurl:& inurl=json
+inurl:& inurl=lang
+inurl:& inurl=layout
+inurl:& inurl=locale
+inurl:& inurl=message
+inurl:& inurl=notify
+inurl:& inurl=order
+inurl:& inurl=redirect
+inurl:& inurl=ref
+inurl:& inurl=referrer
+inurl:& inurl=return
+inurl:& inurl=sort
+inurl:& inurl=state
+inurl:& inurl=success
+inurl:& inurl=tab
+inurl:& inurl=template
+inurl:& inurl=test
+inurl:& inurl=theme
+inurl:& inurl=tpl
+inurl:& inurl=value
+inurl:& inurl=view
+inurl:'/typo3conf/ext/yag_themepack_jquery/'
+inurl:.com inurl:&
+inurl:.env
+inurl:.git/config
+inurl:.git/HEAD
+inurl:.github/workflows
+inurl:.github/workflows "secrets"
+inurl:.next/
+inurl:.travis.yml
+inurl:/account/login
+inurl:/actuator
+inurl:/actuator/env
+inurl:/actuator/health
+inurl:/admin/login.jsp
+inurl:/administrator/index.php
+inurl:/auth/login
+inurl:/auth/signin
+inurl:/cgi-bin/redirect.cgi
+inurl:/customer/account/login
+inurl:/db/websql/
+inurl:/graphiql
+inurl:/graphql
+inurl:/healthz
+inurl:/login.jsp
+inurl:/login?to=
+inurl:/metrics
+inurl:/oauth/authorize
+inurl:/oauth/login
+inurl:/oauth2/login
+inurl:/out/
+inurl:/phpmyadmin
+inurl:/phpmyadmin/index.php
+inurl:/phpmyadmin/user_password.php
+inurl:/portal/login
+inurl:/readyz
+inurl:/remote/login
+inurl:/user/account/login
+inurl:/vpn/login
+inurl:/webvpn.html "login"
+inurl:/wp-admin/
+inurl:/wp-includes/
+inurl:/wp-json/
+inurl:/wp-json/wp/v2/users
+inurl:/wp-json/wp/v2/users "id":1
+inurl:/wp-json/wp/v2/users/ -wordpress.stackexchange.com -stackoverflow.com
+inurl:=www
+inurl:\"/phpmyadmin/user_password.php
+inurl:\":8088/cluster/apps\"
+inurl:\"id=*\" & intext:\"warning mysql_fetch_array()\"
+inurl:admin/login
+inurl:amazonaws.com inurl:company
+inurl:api-docs
+inurl:application.log
+inurl:auth
+inurl:authentication
+inurl:awstats
+inurl:backup
+inurl:backup "Parent Directory"
+inurl:backup-db
+inurl:backup.rar
+inurl:backup.sql
+inurl:backup.tar
+inurl:backup.tar.gz
+inurl:backup.zip
+inurl:backups
+inurl:blob.core.windows.net
+inurl:cacti
+inurl:ci-backup
+inurl:conf filetype:xml
+inurl:conf.ini
+inurl:conf.js
+inurl:conf.json
+inurl:conf.xml
+inurl:conf.yaml
+inurl:config password host
+inurl:config secret host
+inurl:config.inc
+inurl:config.php "DB_PASSWORD"
+inurl:config.php "DB_USER"
+inurl:config.php password
+inurl:config.php secret
+inurl:configuration.js
+inurl:configuration.json
+inurl:configuration.php password
+inurl:configuration.xml
+inurl:continue
+inurl:continue inurl:&
+inurl:database.sql
+inurl:db filetype:sql
+inurl:db-backup
+inurl:db.sql
+inurl:db.sqlite
+inurl:debug.log
+inurl:dest
+inurl:dest inurl:&
+inurl:destination
+inurl:destination inurl:&
+inurl:docker-backup
+inurl:docker-compose.yml
+inurl:dump.sql
+inurl:error.log
+inurl:firebase "apiKey"
+inurl:FTP "ftp root at"
+inurl:gitlab-backup
+inurl:go inurl:&
+inurl:grafana
+inurl:html.zip
+inurl:http
+inurl:image_url
+inurl:image_url inurl:&
+inurl:index.php/using-joomla/extensions/modules/19-sample-data-articles/joomla/50-upgraders
+inurl:index.php/using/joomla site:com
+inurl:index.php?id= "TYPO3 CMS"
+inurl:ipmonitor
+inurl:jenkins-backup
+inurl:jira
+inurl:kibana
+inurl:labstats
+inurl:link
+inurl:livemonitoring
+inurl:livestats
+inurl:log
+inurl:log ext:log inurl:wp-
+inurl:login
+inurl:login "Welcome to Grafana"
+inurl:logtstats
+inurl:Makefile
+inurl:Makefile.toml
+inurl:MediaWiki_talk
+inurl:monitor
+inurl:monitor01
+inurl:monitor02
+inurl:monitor1
+inurl:monitor2
+inurl:monitoramento
+inurl:monitoring
+inurl:monitoring1
+inurl:monitoring2
+inurl:munin
+inurl:mysql.sql
+inurl:nagios/side.php
+inurl:netstats
+inurl:next
+inurl:next inurl:&
+inurl:nginx_status
+inurl:openapi.json
+inurl:page
+inurl:path
+inurl:path inurl:&
+inurl:presentation filetype:pdf
+inurl:public_html.zip
+inurl:query filetype:html inurl:page
+inurl:query filetype:html inurl:sort
+inurl:query filetype:php
+inurl:react "api_key"
+inurl:readme.md intext:"typo3"
+inurl:redir
+inurl:redir inurl:&
+inurl:redirect
+inurl:redirect inurl:&
+inurl:redirect_uri
+inurl:redirect_uri inurl:&
+inurl:ret
+inurl:return
+inurl:return inurl:&
+inurl:return_path
+inurl:return_path inurl:&
+inurl:return_to
+inurl:return_to inurl:&
+inurl:returnTo
+inurl:returnTo inurl:&
+inurl:rurl
+inurl:save filetype:sql
+inurl:search inurl:p
+inurl:search inurl:page
+inurl:secret filetype:yaml
+inurl:settings.php password
+inurl:setup.sql
+inurl:sign-in
+inurl:signin
+inurl:site
+inurl:site.zip
+inurl:stats
+inurl:storage.googleapis.com
+inurl:stripe.com "api_key"
+inurl:suche
+inurl:swagger-ui
+inurl:swagger.json
+inurl:target
+inurl:target inurl:&
+inurl:typo3conf
+inurl:url
+inurl:url inurl:&
+inurl:url OR inurl:continue OR inurl:returnto OR inurl:redirect OR inurl:return OR inurl:target OR inurl:site OR inurl:view  OR inurl:path
+inurl:user-login
+inurl:users.sql
+inurl:view
+inurl:view inurl:&
+inurl:web.zip
+inurl:website.zip
+inurl:webstats
+inurl:wiki
+inurl:wiki/index.php?title=Special:Userlogin&amp;returnto
+inurl:wp-config
+inurl:wp-config.php
+inurl:wp-config.php intext:DB_PASSWORD
+inurl:wp-config.txt
+inurl:wp-content/ai1wm-backups wpress
+inurl:wp-content/uploads filetype:xls
+inurl:wp-content/uploads filetype:xlsx password
+inurl:wp-content/uploads/db-backup
+inurl:wp-content/uploads/private
+inurl:wp-content/w3tc/dbcache
+inurl:wp-content/wp-backup-plus
+inurl:wp-content/wpbackitup_backups
+inurl:wp-content/wpclone-temp/wpclone_backup
+inurl:wp-login
+inurl:wp-login.php
+inurl:wp-login.php?action=lostpassword
+inurl:wp-mail.php
+inurl:wp-mail.php "There doesn't seem to be any new mail"
+inurl:wp-security-audit-log ext:log
+inurl:www.zip
+inurl=page inurl=id
+inurl=page inurl=name
+inurl=search inurl=keyword
+inurl=search inurl=query
+inurl=search inurl=term
+keyword "wiki" (site:.edu)
+Keyword inurl:wiki
+mysql filetype:xml
+mysql history files filetype:txt
+mysql intext:passwords filetype:txt
+mysql root filetype:txt
+mysql secrect password
+mysql settings filetype:xml
+Name Last modified Size Description inurl:conf
+name size "Last modified" inurl:ftp
+password host inurl:config filetype:txt
+php jembut.php "index.php/adminhtml/default/default
+presentation filetype:pdf
+s3-secret-access-key
+search.php
+search.php?id=
+secret inurl:js filetype:txt
+site:*.redacted.com AND (inurl:url OR inurl:continue OR inurl:returnto OR inurl:redirect OR inurl:return OR inurl:target OR inurl:site OR inurl:view  OR inurl:path)
+site:*/wp-admin/install.php intitle:"WordPress Installation"
+site:.edu "Log in / create account"
+site:.edu inurl:MediaWiki_talk
+site:.edu inurl:wiki
+site:.edu wiki
+site:admin.*.* intitle:"login"
+site:amazonaws.com inurl:company
+site:atlassian.net intext:company
+site:blob.core.windows.net intitle:"Index of"
+site:com "Powered by BlogEngine.NET 1.4.5.0"
+site:com "Powered by BlogEngine.NET 1.4.5.0" "add a comment"
+site:com "Powered by BlogEngine.NET 1.4.5.0" "add a comment" -"comments closed" -"you must be logged in"
+site:com "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment"
+site:com "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment" -"comments closed" -"you must be logged in"
+site:com "Powered by BlogEngine.NET 1.4.5.0" "post a comment"
+site:com "Powered by BlogEngine.NET 1.4.5.0" "post a comment" -"comments closed" -"you must be logged in"
+site:com "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment"
+site:com "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:com "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment"
+site:com "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:com "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment"
+site:com "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:com "powered by BlogEngine.NET"
+site:com "powered by BlogEngine.NET" "add a comment"
+site:com "powered by BlogEngine.NET" "add a comment" -"comments closed" -"you must be logged in"
+site:com "powered by BlogEngine.NET" "Leave a comment"
+site:com "powered by BlogEngine.NET" "Leave a comment" -"comments closed" -"you must be logged in"
+site:com "powered by BlogEngine.NET" "post a comment"
+site:com "powered by BlogEngine.NET" "post a comment" -"comments closed" -"you must be logged in"
+site:com "powered by BlogEngine.NET" inurl:blog "add a comment"
+site:com "powered by BlogEngine.NET" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:com "powered by BlogEngine.NET" inurl:blog "Leave a comment"
+site:com "powered by BlogEngine.NET" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:com "powered by BlogEngine.NET" inurl:blog "post a comment"
+site:com "powered by BlogEngine.NET" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:edu "Powered by BlogEngine.NET 1.4.5.0"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" "add a comment"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" "add a comment" -"comments closed" -"you must be logged in"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment" -"comments closed" -"you must be logged in"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" "post a comment"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" "post a comment" -"comments closed" -"you must be logged in"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment"
+site:edu "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:edu "powered by BlogEngine.NET"
+site:edu "powered by BlogEngine.NET" "add a comment"
+site:edu "powered by BlogEngine.NET" "add a comment" -"comments closed" -"you must be logged in"
+site:edu "powered by BlogEngine.NET" "Leave a comment"
+site:edu "powered by BlogEngine.NET" "Leave a comment" -"comments closed" -"you must be logged in"
+site:edu "powered by BlogEngine.NET" "post a comment"
+site:edu "powered by BlogEngine.NET" "post a comment" -"comments closed" -"you must be logged in"
+site:edu "powered by BlogEngine.NET" inurl:blog "add a comment"
+site:edu "powered by BlogEngine.NET" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:edu "powered by BlogEngine.NET" inurl:blog "Leave a comment"
+site:edu "powered by BlogEngine.NET" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:edu "powered by BlogEngine.NET" inurl:blog "post a comment"
+site:edu "powered by BlogEngine.NET" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:ftp.*.com \"Web File Manager\"
+site:gov "Powered by BlogEngine.NET 1.4.5.0"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" "add a comment"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" "add a comment" -"comments closed" -"you must be logged in"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment" -"comments closed" -"you must be logged in"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" "post a comment"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" "post a comment" -"comments closed" -"you must be logged in"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment"
+site:gov "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:gov "powered by BlogEngine.NET"
+site:gov "powered by BlogEngine.NET" "add a comment"
+site:gov "powered by BlogEngine.NET" "add a comment" -"comments closed" -"you must be logged in"
+site:gov "powered by BlogEngine.NET" "Leave a comment"
+site:gov "powered by BlogEngine.NET" "Leave a comment" -"comments closed" -"you must be logged in"
+site:gov "powered by BlogEngine.NET" "post a comment"
+site:gov "powered by BlogEngine.NET" "post a comment" -"comments closed" -"you must be logged in"
+site:gov "powered by BlogEngine.NET" inurl:blog "add a comment"
+site:gov "powered by BlogEngine.NET" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:gov "powered by BlogEngine.NET" inurl:blog "Leave a comment"
+site:gov "powered by BlogEngine.NET" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:gov "powered by BlogEngine.NET" inurl:blog "post a comment"
+site:gov "powered by BlogEngine.NET" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:http://atlassian.net inurl:company
+site:http://github.com intext:company
+site:http://github.com intext:company.com
+site:http://gitlab.com intext:company
+site:http://pastebin.com inurl:company
+site:http://repl.it intext:company
+site:http://s3.amazonaws.com inurl:company
+site:http://scribd.com intext:company
+site:http://scribd.com intext:company.com
+site:http://zoom.us inurl:company
+site:https://docs.google.com/document/d/ password intext:company
+site:https://docs.google.com/forms responses intext:company
+site:https://docs.google.com/forms viewanalytics intext:company
+site:https://docs.google.com/spreadsheets edit intext:company
+site:https://docs.google.com/spreadsheets responses intext:company
+site:https://docs.google.com/spreadsheets/d/ password intext:company
+site:org "Powered by BlogEngine.NET 1.4.5.0"
+site:org "Powered by BlogEngine.NET 1.4.5.0" "add a comment"
+site:org "Powered by BlogEngine.NET 1.4.5.0" "add a comment" -"comments closed" -"you must be logged in"
+site:org "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment"
+site:org "Powered by BlogEngine.NET 1.4.5.0" "Leave a comment" -"comments closed" -"you must be logged in"
+site:org "Powered by BlogEngine.NET 1.4.5.0" "post a comment"
+site:org "Powered by BlogEngine.NET 1.4.5.0" "post a comment" -"comments closed" -"you must be logged in"
+site:org "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment"
+site:org "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:org "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment"
+site:org "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:org "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment"
+site:org "Powered by BlogEngine.NET 1.4.5.0" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:org "powered by BlogEngine.NET"
+site:org "powered by BlogEngine.NET" "add a comment"
+site:org "powered by BlogEngine.NET" "add a comment" -"comments closed" -"you must be logged in"
+site:org "powered by BlogEngine.NET" "Leave a comment"
+site:org "powered by BlogEngine.NET" "Leave a comment" -"comments closed" -"you must be logged in"
+site:org "powered by BlogEngine.NET" "post a comment"
+site:org "powered by BlogEngine.NET" "post a comment" -"comments closed" -"you must be logged in"
+site:org "powered by BlogEngine.NET" inurl:blog "add a comment"
+site:org "powered by BlogEngine.NET" inurl:blog "add a comment" -"comments closed" -"you must be logged in"
+site:org "powered by BlogEngine.NET" inurl:blog "Leave a comment"
+site:org "powered by BlogEngine.NET" inurl:blog "Leave a comment" -"comments closed" -"you must be logged in"
+site:org "powered by BlogEngine.NET" inurl:blog "post a comment"
+site:org "powered by BlogEngine.NET" inurl:blog "post a comment" -"comments closed" -"you must be logged in"
+site:s3.amazonaws.com intitle:"Index of"
+site:sftp.*.* intitle:"login"
+site:storage.googleapis.com intitle:"Index of"
+site:target.com inurl:admin | inurl:administrator | inurl:adm | inurl:login | inurl:l0gin | inurl:wp-login
+This page was last modified on "wiki"
+wiki inurl:.edu

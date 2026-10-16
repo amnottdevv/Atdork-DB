@@ -1,0 +1,20 @@
+# Source: https://github.com/spekulatius/infosec-dorks (README)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+site:[TARGET] ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:env | ext:ini
+site:[TARGET] ext:sql | ext:db | ext:dbf | ext:mdb | ext:sql.gz | ext:sql.gz | ext:db.gz | ext:db.gz
+site:[TARGET] ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+inurl:"/.git" [TARGET] -site:github.com
+site:[TARGET] ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+site:[TARGET] AND (intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()")
+site:[TARGET] AND ("PHP Parse error" | "PHP Warning" | "PHP Error")
+site:[TARGET] "Index of" inurl:phpmyadmin
+site:[TARGET] AND (inurl:signup | inurl:login | inurl:register | intitle:Signup)
+site:[TARGET] AND (inurl:redir | inurl:url | inurl:redirect | inurl:return | inurl:location | inurl:next | inurl:dest | inurl:src=http | inurl:r=http)
+site:[TARGET] AND (ext:action | ext:struts | ext:do)
+site:[TARGET] AND (inurl:wp-content | inurl:wp-includes)
+site:[TARGET] inurl:wp-config.php intext:DB_PASSWORD
+site:[TARGET] intitle:"Index of" wp-admin
+site:[TARGET] AND (intitle:index.of | ext:log | ext:php intitle:phpinfo "published by the PHP Group" | inurl:shell | inurl:backdoor | inurl:wso | inurl:cmd | shadow | passwd | boot.ini | inurl:backdoor | inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config | inurl:"/phpinfo.php" | inurl:".htaccess" | ext:swf)
+site:[TARGET] AND (ext:env | ext:log | ext:sql | ext:yml | ext:pem | ext:ini | ext:logs | ext:ibd | ext:txt | ext:php.txt | ext:old | ext:key | ext:frm | ext:bak | ext:zip | ext:swp | ext:conf | ext:db | ext:config | ext:ovpn | ext:svn | ext:git | ext:cfg | ext:exs | ext:dbf | ext:mdb | ext:pem | ext:pub | ext:yaml | ext:zip | ext:asc | ext:xls | ext:xlsx")
+site:[TARGET] inurl:_cpanel/forgotpwd
+site:[TARGET] inurl:/proc/self/cwd

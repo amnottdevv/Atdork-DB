@@ -10,8 +10,12 @@ Large classic Google dork collections, kept as-is from their original authors.
 | --- | ---: | --- |
 | `googledorks1.txt` | 13,760 | Classic curated collection (BullsEye) |
 | `googledorks2.txt` | 18,463 | ~7K dorks for exposed site internals |
+| `awesome-google-dorks-tobee1406.txt` | 63 | Awesome-Google-Dorks picks, grouped by target type |
+| `google-dorks-proviesec.txt` | 774 | Google dork collection (Proviesec, curated for web security) |
+| `google-operators-bushidouk.txt` | 38 | Search-operator cheat sheet mapped to file-type targets |
+| `infosec-dorks-spekulatius.txt` | 325 | Infosec dorks with [TARGET] placeholders for scoping |
 
-**Folder total: 32,223 dorks across 2 packages.**
+**Folder total: 33,423 dorks across 6 packages.**
 
 ## Usage
 

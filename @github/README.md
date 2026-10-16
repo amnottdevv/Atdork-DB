@@ -12,8 +12,9 @@ Dorks for hunting secrets and exposed configuration on GitHub — credentials, t
 | `git-files-dorks.txt` | 11 | Exposed `.git-credentials` / `.gitconfig` files |
 | `github.txt` | 19 | General GitHub secrets & config dorks |
 | `githubdorks.txt` | 180 | Filename-based dorks (`.npmrc _auth`, `.dockercfg`...) |
+| `github-dorks-techgaun.txt` | 96 | GitHub secret-hunting dorks by data type (techgaun/github-dorks) |
 
-**Folder total: 723 dorks across 4 packages.**
+**Folder total: 819 dorks across 5 packages.**
 
 ## Usage
 

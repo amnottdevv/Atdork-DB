@@ -1,0 +1,20 @@
+# Source: https://github.com/Proviesec/google-dorks (all-google-dorks.txt)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+"-- MySQL dump" "Server version" "Table structure for table"
+"anthropic" "api_key"
+"BEGIN OPENSSH PRIVATE KEY"
+"BEGIN RSA PRIVATE KEY"
+"claude" "api_key"
+"client = OpenAI("
+"cohere" "api_key"
+"Exception" "stack trace"
+"Fatal error" "on line"
+"firebase" "apiKey" filetype:json
+"firebase" "private_key"
+"isa registered trademark of the Wikimedia Foundation, Inc.,"
+"key-" "mailgun"
+"Log in / createaccount"
+"Login Pages" "inurl:login"
+"Login required to edit"
+"login" "user" "password"
+"Main Page""discussion""edit"

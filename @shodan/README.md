@@ -12,8 +12,11 @@ Shodan filter cheat-sheets and curated query collections for internet-device rec
 | `shodan2.txt` | 233 | Curated query collection (by @lothos612) |
 | `shodan_ace-ics-iot-dorks.csv` | 130 | ICS/OT vendor-product query table (CSV) |
 | `shodanqueries.txt` | 168 | Grouped queries by use case (admin, SSH...) |
+| `shodan-appliances-bushidouk.txt` | 45 | Shodan ssl:/port: queries for common appliances |
+| `shodan-dorks-dootss.txt` | 114 | Auto-updating Shodan dorks grouped by category |
+| `shodan-dorks-nullfuzz.txt` | 2,833 | Large Shodan query/fingerprint collection |
 
-**Folder total: 720 dorks across 4 packages.**
+**Folder total: 3,712 dorks across 7 packages.**
 
 ## Usage
 

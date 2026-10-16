@@ -1,0 +1,20 @@
+# Source: https://github.com/Tobee1406/Awesome-Google-Dorks (README)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+filetype:pdf intitle:"Confidental"
+filetype:doc intitle:"Confidental"
+filetype:xls intitle:"Confidental"
+filetype:ppt intitle:"Confidental"
+intitle:"D-Link" inurl:"/video.htm"
+intitle:"Linksys Viewer - Login" -inurl:mainFrame
+intitle:"Live View /-AXIS"
+intitle:"netcam watcher"
+intitle:"Network Camera NetworkCamera"
+intitle:"TP-LINK IP-Camera"
+intitle:"webcamXP 5"
+intitle:webcamxp inurl:8080
+inurl:"axis-cgi/mjpg"
+inurl:"control/userimage.html"
+inurl:"/image/webcam.jpg"
+inurl:"/live/cam.html"
+inurl:"main.cgi?next_file=main_fs.htm"
+inurl:"/mjpg/video.mjpg"

@@ -1,0 +1,20 @@
+# Source: https://github.com/BushidoUK/OSINT-SearchOperators (ShodanQueriesAppliances.csv)
+# Ingested 2026-10-16 — deduplicated against the Atdork-DB corpus.
+ssl:”brand name” port:22
+ssl:”brand name” port:21
+ssl:”brand name” port:25
+ssl:"brand name" product:"VNC" port:”5900”
+ssl:”brand name” port:3389
+ssl:”brand name” port:445
+ssl:”brand name” product:"MongoDB"
+ssl:”brand name” product:”MS-SQL”
+ssl:"brand name" product:"elastic"
+http.favicon.hash:1611729805
+http.favicon.hash:1552860581
+ssl:”brand name” product:"Redis" port:"6379"
+http.title:mariadb
+http.favicon.hash:-228859905
+http.title:exchange
+http.favicon.hash:-1249852061
+http.favicon.hash:442749392
+ssl:”brand name” port:”2375”
