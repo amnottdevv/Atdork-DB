@@ -68,7 +68,9 @@
           <a href="#/plugins">plugins</a>, then pull them straight into
           <a href="https://github.com/amnottdevv/atdork">AtDork</a>:
           <code>atdork install @cve/cve_1.txt</code> or
-          <code>atdork install @plugins/dorkbuilder</code> — no copying, no <code>git clone</code>.</p>
+          <code>atdork install @plugins/dorkbuilder</code> — no copying, no
+          <code>git clone</code>. Your own repo works too:
+          <code>atdork install https://github.com/you/plugins#my-tool</code>.</p>
         <div class="search">
           <svg class="icon" width="17" height="17" viewBox="0 0 16 16" fill="currentColor"><path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.82 4.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.06Z"/></svg>
           <input id="q" type="search" placeholder="Search packages & plugins…  e.g. s3, cve, subdomain, report"
@@ -311,11 +313,15 @@
 
         <div class="cmd"><code><span class="prompt">$ </span>atdork install ${esc(p.ref)}</code>
           <button class="btn" data-copy="atdork install ${esc(p.ref)}">⧉ copy</button></div>
+        <div class="cmd"><code><span class="prompt">$ </span>atdork install https://github.com/amnottdevv/Atdork-DB#${esc(p.ref)}</code>
+          <button class="btn" data-copy="atdork install https://github.com/amnottdevv/Atdork-DB#${esc(p.ref)}">⧉ copy</button></div>
         <div class="cmd"><code><span class="prompt">$ </span>${esc(example)}</code>
           <button class="btn" data-copy="${esc(example)}">⧉ copy</button></div>
         <p class="hint">every option is registered as <code>--${esc(p.name)}-&lt;option&gt;</code> —
           the plugin runs when the bare <code>${esc(p.trigger)}</code> flag or any
-          <code>--${esc(p.name)}-…</code> argument is present.</p>
+          <code>--${esc(p.name)}-…</code> argument is present.
+          Publishing a tool of your own? <code>atdork plugins publish ${esc(p.ref)} --write</code>
+          generates the <code>Index.idn</code> lines for your repository.</p>
 
         ${p.options.length ? `<div class="card"><h3>Options</h3>
           <div class="body flush"><table>
