@@ -63,13 +63,15 @@
     document.title = "Atdork-DB — Dork Package Catalog";
     view.innerHTML = `
       <section class="hero">
-        <h1>${fmtN(t.dorks)} dorks. One command away.</h1>
-        <p class="sub">Browse curated OSINT dork packages, then install them straight into
+        <h1>${fmtN(t.dorks)} dorks · ${fmtN(t.plugins || 0)} plugins. One command away.</h1>
+        <p class="sub">Browse curated OSINT dork packages and installable
+          <a href="#/plugins">plugins</a>, then pull them straight into
           <a href="https://github.com/amnottdevv/atdork">AtDork</a>:
-          <code>atdork install @cve/cve_1.txt</code> — no copying, no <code>git clone</code>.</p>
+          <code>atdork install @cve/cve_1.txt</code> or
+          <code>atdork install @plugins/dorkbuilder</code> — no copying, no <code>git clone</code>.</p>
         <div class="search">
           <svg class="icon" width="17" height="17" viewBox="0 0 16 16" fill="currentColor"><path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.82 4.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.06Z"/></svg>
-          <input id="q" type="search" placeholder="Search packages…  e.g. s3, shodan, cve, discord"
+          <input id="q" type="search" placeholder="Search packages & plugins…  e.g. s3, cve, subdomain, report"
                  autocomplete="off" spellcheck="false" value="${esc(state.q)}">
           <kbd>/</kbd>
         </div>
@@ -78,11 +80,13 @@
         <div class="stat"><b>${fmtN(t.packages)}</b><span>Packages</span></div>
         <div class="stat"><b>${fmtN(t.folders)}</b><span>Folders</span></div>
         <div class="stat"><b>${fmtN(t.dorks)}</b><span>Dorks</span></div>
+        <a class="stat" href="#/plugins" title="Browse plugins"><b>${fmtN(t.plugins || 0)}</b><span>Plugins</span></a>
         <div class="stat"><b>${fmtDate(DB.generated)}</b><span>Last rebuild</span></div>
       </section>
       <div class="chips" id="chips"></div>
       <div class="result-bar"><span id="count"></span>
         <a href="https://github.com/amnottdevv/Atdork-DB">Edit data on GitHub →</a></div>
+      <div id="plugin-hits"></div>
       <div class="table"><table>
         <thead><tr>
           <th>Package</th><th class="num">Dorks</th><th class="num size">Size</th>
@@ -114,7 +118,42 @@
     refreshRows();
   }
 
+  function pluginMatches() {
+    const toks = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!toks.length || !PLUGINS) return [];
+    return PLUGINS.plugins.filter((p) => toks.every((t) =>
+      `${p.name} ${p.description} ${p.ref} plugin`.toLowerCase().includes(t)));
+  }
+
+  function renderPluginHits() {
+    const host = view.querySelector("#plugin-hits");
+    if (!host) return;
+    if (!state.q) { host.innerHTML = ""; return; }
+    loadPlugins().then(() => {
+      if (!state.q) { host.innerHTML = ""; return; }  // query cleared while loading
+      const hits = pluginMatches();
+      host.innerHTML = hits.length ? `
+        <div class="result-bar"><span>${hits.length} plugin${hits.length === 1 ? "" : "s"}
+          matching “${esc(state.q)}”</span>
+          <a href="#/plugins">all plugins →</a></div>
+        <div class="table"><table>
+          <thead><tr><th>Plugin</th><th class="num size">Version</th>
+            <th class="desc-h">Description</th><th></th></tr></thead>
+          <tbody>${hits.map((p) => `
+            <tr>
+              <td class="pkg"><a href="#/plugin/${encodeURIComponent(p.name)}">${esc(p.name)}</a>
+                <span class="folder-tag">${esc(p.trigger)}</span></td>
+              <td class="num size">${esc(p.version)}</td>
+              <td class="desc">${esc(p.description)}</td>
+              <td class="act"><button class="btn" data-copy="atdork install ${esc(p.ref)}"
+                  title="Copy install command">⧉ install</button></td>
+            </tr>`).join("")}
+          </tbody></table></div>` : "";
+    }).catch(() => { host.innerHTML = ""; });
+  }
+
   function refreshRows() {
+    renderPluginHits();
     const items = filtered();
     const rows = view.querySelector("#rows");
     const empty = view.querySelector("#empty");

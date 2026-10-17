@@ -279,6 +279,7 @@ def main() -> int:
             "folders": len(folders),
             "dorks": sum(e["dorks"] for e in entries),
             "bytes": sum(e["bytes"] for e in entries),
+            "plugins": len(plugins),
         },
         "folders": sorted(folders.values(), key=lambda f: f["name"]),
         "packages": sorted(entries, key=lambda e: e["ref"]),
