@@ -1,6 +1,6 @@
 # Atdork-DB index v1
-# generated: 2026-10-16T01:13:07Z
-# entries: 123
+# generated: 2026-10-17T11:38:53Z
+# entries: 125
 # total-dorks: 994603
 @admin/adminpanel-dorks.txt|a7496acb4e22b459eb8a869fa95d3904a19484d9a1778043be291be741b82f02|8524|447|Adminpanel Dorks
 @admin/awstats.txt|5a36794cf5cf63618b49c02492786955ed5f4dbe634966b108e50b7159e36838|367|15|Awstats
@@ -96,6 +96,8 @@
 @network/ipdorks.txt|5fd7bd90aa476f363bacdfb0302e64b3f6903b9e9ee48ad99565bd517b5accee|3039829|98971|Ipdorks
 @network/webserver-detection-dorks.txt|f8614b2f27d9c3a10e21f1d21adbafceb2b69e81072b74be252e6035217c8606|9162|204|Webserver Detection Dorks
 @onion/onion.txt|f922d5f851524fd67ddc640e519434533101b9131250c1ae973df5d5fb170fc6|152|9|Onion
+@plugins/dorkbuilder/dorkbuilder.py|32770291d9e3902c55875f4c4fae4efccadb5d2854c6081ad479537ff9e84d3c|5805|0|Dorkbuilder
+@plugins/reportgen/reportgen.py|e6a2c53a75571d381fc14a882c42b7a7c71c5b77681fe8c26df2989cd1e1d3a2|6058|0|Reportgen
 @rfi/rfi.txt|2dbe8e2a6747fffee5685b09ed51aa513b04f5f17eae494a9b0780c5ef53fba6|104761|2866|RFI
 @sensitive/hidden-files-dorks.txt|e3c249ed99e57d7d9153e0535d59e374b886fcffb822b0a7ec9522f5a4ee82e6|30847|749|Hidden Files Dorks
 @sensitive/log-files-dorks.txt|9f41b3f8c2fab6780e7e82b2869906adab710008daf98f7a5b82829f750b9320|526|17|Log Files Dorks

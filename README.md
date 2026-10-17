@@ -7,6 +7,7 @@ manifest that AtDork's package manager reads.
 ```
 Atdork-DB/
 ├── Index.idn               # generated manifest — do not edit by hand
+├── @plugins/               # installable AtDork plugin tools (.py)
 ├── @exploit-db/            # Exploit-DB GHDB categories
 ├── @ghdb/                  # auto-refreshed GHDB export (weekly CI)
 ├── @cve/                   # CVE hunting queries
@@ -37,6 +38,10 @@ atdork install c@cve_1.txt
 atdork install @exploit-db          # whole folder
 atdork installed
 
+# install a plugin tool, then run it as --<plugin>-<option> flags
+atdork install @plugins/dorkbuilder
+atdork --dorkbuilder-text "John wick" --dorkbuilder-save dorks.txt
+
 # use them
 atdork --batch-file c@cve_1.txt -r 20
 atdork --database-dork @ghdb/01_footholds --database-preview
@@ -56,6 +61,12 @@ the installed copy, then fall back to this repository.
 | `c@cve_1.txt` | shorthand — unique folder prefix `c` → `@cve` |
 | `cve_1.txt` | bare file name (must be unique in the index) |
 | `@cve` | whole folder (install/uninstall) |
+| `@plugins/dorkbuilder` | plugin tool folder (every file inside) |
+| `@plugins/dorkbuilder/dorkbuilder.py` | a single plugin module |
+
+Plugin modules (`@plugins/.../*.py`) are indexed with `0` dork-lines: they are
+installable tools run via their `--<plugin>` flags, never loaded as dork
+content.
 
 ## Index.idn format
 
