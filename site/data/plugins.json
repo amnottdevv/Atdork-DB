@@ -1,0 +1,404 @@
+{
+ "generated": "2026-10-17T12:33:20Z",
+ "count": 7,
+ "plugins": [
+  {
+   "name": "dorkbuilder",
+   "version": "1.0.0",
+   "description": "Build ready-to-run dork lists from text + a category",
+   "ref": "@plugins/dorkbuilder",
+   "module": "@plugins/dorkbuilder/dorkbuilder.py",
+   "bytes": 5805,
+   "options": [
+    {
+     "flag": "--dorkbuilder-text",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Text to hunt for (name, brand, keyword, username)"
+    },
+    {
+     "flag": "--dorkbuilder-type",
+     "type": "str",
+     "default": "social-media",
+     "choices": [
+      "social-media",
+      "sosial-media",
+      "exposed-files",
+      "logins",
+      "credentials",
+      "cloud",
+      "all"
+     ],
+     "help": "Dork category ('sosial-media' is an alias of 'social-media')"
+    },
+    {
+     "flag": "--dorkbuilder-save",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Write the dorks to this file (env-guarded; relative paths resolve inside the active environment)"
+    },
+    {
+     "flag": "--dorkbuilder-limit",
+     "type": "int",
+     "default": 0,
+     "choices": [],
+     "help": "Emit at most N dorks (0 = all)"
+    },
+    {
+     "flag": "--dorkbuilder-list-types",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "List the available categories and exit"
+    }
+   ],
+   "trigger": "--dorkbuilder",
+   "readme_html": "<h1>dorkbuilder \u2014 build ready-to-run dork lists from text + a category</h1>\n<p>Turn a name, brand or keyword into a set of ready-to-run Google dorks: social profiles, exposed files, login portals, credential leaks and cloud buckets \u2014 no manual pattern writing.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/dorkbuilder</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># social-media dorks for a person/brand, saved to dorks.txt\natdork --dorkbuilder-text &quot;John wick&quot; \\\n       --dorkbuilder-type social-media \\\n       --dorkbuilder-save dorks.txt\n\n# see every category\natdork --dorkbuilder-list-types\n\n# first 5 credential-leak dorks\natdork --dorkbuilder-text acme --dorkbuilder-type credentials --dorkbuilder-limit 5</code></pre>\n<p>Run the generated dorks straight from a file:</p>\n<pre><code class=\"language-bash\">atdork --batch-file dorks.txt -r 20</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--dorkbuilder-text</code></td><td>\u2014</td><td>Text to hunt for (name, brand, keyword, username). Required.</td></tr><tr><td><code>--dorkbuilder-type</code></td><td><code>social-media</code></td><td>Category: <code>social-media</code>, <code>exposed-files</code>, <code>logins</code>, <code>credentials</code>, <code>cloud</code>, <code>all</code> (<code>sosial-media</code> is an alias).</td></tr><tr><td><code>--dorkbuilder-save</code></td><td>\u2014</td><td>Write the dorks to a file (env-guarded; relative paths resolve inside the active environment). CSV quoting is applied for <code>.csv</code>.</td></tr><tr><td><code>--dorkbuilder-limit</code></td><td><code>0</code></td><td>Emit at most N dorks (<code>0</code> = all).</td></tr><tr><td><code>--dorkbuilder-list-types</code></td><td>off</td><td>List the available categories and exit.</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>Fully offline \u2014 no search credits are spent; it only builds patterns.</li><li>Output is one dork per line, ready for <code>--batch-file</code> or</li></ul>\n<p><code>--database-dork</code> after installing a package.</p>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/dorkbuilder/dorkbuilder.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/dorkbuilder/dorkbuilder.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/dorkbuilder/README.md"
+  },
+  {
+   "name": "emaildork",
+   "version": "1.0.0",
+   "description": "Build (and optionally run) email-discovery dorks",
+   "ref": "@plugins/emaildork",
+   "module": "@plugins/emaildork/emaildork.py",
+   "bytes": 5109,
+   "options": [
+    {
+     "flag": "--emaildork-name",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Name, brand or keyword to hunt emails for"
+    },
+    {
+     "flag": "--emaildork-domain",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Restrict to a domain (e.g. acme.com) \u2014 optional"
+    },
+    {
+     "flag": "--emaildork-save",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Write output to this file (env-guarded)"
+    },
+    {
+     "flag": "--emaildork-search",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "Run the dorks and print extracted emails (spends credits)"
+    },
+    {
+     "flag": "--emaildork-limit",
+     "type": "int",
+     "default": 0,
+     "choices": [],
+     "help": "Emit at most N dorks (0 = all)"
+    }
+   ],
+   "trigger": "--emaildork",
+   "readme_html": "<h1>emaildork \u2014 email discovery dorks for a name / brand + domain</h1>\n<p>Build (and optionally run) dorks that surface indexed email addresses: contact pages, PDFs and documents, breach-style dumps, GitHub/config leaks and people-search directories.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/emaildork</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># dorks for a person/brand\natdork --emaildork-name &quot;john wick&quot;\n\n# restrict to one domain\natdork --emaildork-name &quot;john wick&quot; --emaildork-domain acme.com\n\n# run them and extract unique addresses from the result snippets\natdork --emaildork-name acme --emaildork-domain acme.com --emaildork-search\n\n# save\natdork --emaildork-name acme --emaildork-save emails.txt</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--emaildork-name</code></td><td>\u2014</td><td>Name, brand or keyword to hunt emails for.</td></tr><tr><td><code>--emaildork-domain</code></td><td>\u2014</td><td>Restrict to a domain (e.g. <code>acme.com</code>).</td></tr><tr><td><code>--emaildork-search</code></td><td>off</td><td>Run the dorks and print extracted emails (spends search credits).</td></tr><tr><td><code>--emaildork-save</code></td><td>\u2014</td><td>Write emails (with <code>--emaildork-search</code>) or the dorks (without) to a file, env-guarded.</td></tr><tr><td><code>--emaildork-limit</code></td><td><code>0</code></td><td>Emit at most N dorks (<code>0</code> = all).</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>At least one of <code>--emaildork-name</code> / <code>--emaildork-domain</code> is required.</li><li>With <code>--emaildork-domain</code>, extracted addresses are filtered to that</li></ul>\n<p>domain (<code>*@domain</code>).</p>\n<ul><li>Extraction is a light regex over result snippets \u2014 treat hits as leads to</li></ul>\n<p>verify, not confirmed addresses.</p>\n<ul><li>Without <code>--emaildork-search</code> it is fully offline.</li></ul>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/emaildork/emaildork.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/emaildork/emaildork.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/emaildork/README.md"
+  },
+  {
+   "name": "geodork",
+   "version": "1.0.0",
+   "description": "Build (and optionally run) geographically-scoped dorks",
+   "ref": "@plugins/geodork",
+   "module": "@plugins/geodork/geodork.py",
+   "bytes": 5436,
+   "options": [
+    {
+     "flag": "--geodork-location",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "City / region / country (e.g. 'jakarta' or 'Bandung, Indonesia')"
+    },
+    {
+     "flag": "--geodork-keyword",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Keyword to combine with the location (optional)"
+    },
+    {
+     "flag": "--geodork-type",
+     "type": "str",
+     "default": "all",
+     "choices": [
+      "maps",
+      "local",
+      "tld",
+      "all"
+     ],
+     "help": "Dork category"
+    },
+    {
+     "flag": "--geodork-save",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Write the dorks to this file (env-guarded)"
+    },
+    {
+     "flag": "--geodork-search",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "Run the dorks and print matching URLs (spends credits)"
+    },
+    {
+     "flag": "--geodork-limit",
+     "type": "int",
+     "default": 0,
+     "choices": [],
+     "help": "Emit at most N dorks (0 = all)"
+    }
+   ],
+   "trigger": "--geodork",
+   "readme_html": "<h1>geodork \u2014 geographically-scoped dork builder</h1>\n<p>Combine a location with a keyword (or a bare location) into dorks that narrow search results to a place: map/locality operators, regional TLDs, <code>in &lt;city&gt;</code> phrasing and local directory sites.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/geodork</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># dorks for coffee shops in Jakarta\natdork --geodork-location &quot;jakarta&quot; --geodork-keyword &quot;coffee&quot;\n\n# bare location\natdork --geodork-location &quot;Bandung, Indonesia&quot;\n\n# only maps results\natdork --geodork-location jakarta --geodork-keyword kopi --geodork-type maps\n\n# run them and print matching URLs\natdork --geodork-location jakarta --geodork-keyword kopi --geodork-search</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--geodork-location</code></td><td>\u2014</td><td>City / region / country (e.g. <code>jakarta</code> or <code>Bandung, Indonesia</code>). Required.</td></tr><tr><td><code>--geodork-keyword</code></td><td>location</td><td>Keyword to combine with the location.</td></tr><tr><td><code>--geodork-type</code></td><td><code>all</code></td><td>Category: <code>maps</code>, <code>local</code>, <code>tld</code>, <code>all</code>.</td></tr><tr><td><code>--geodork-search</code></td><td>off</td><td>Run the dorks and print matching URLs (spends search credits).</td></tr><tr><td><code>--geodork-save</code></td><td>\u2014</td><td>Write URLs (with <code>--geodork-search</code>) or the dorks (without) to a file, env-guarded.</td></tr><tr><td><code>--geodork-limit</code></td><td><code>0</code></td><td>Emit at most N dorks (<code>0</code> = all).</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>The <code>tld</code> category maps recognized countries/regions to their ccTLD</li></ul>\n<p>(<code>indonesia</code> \u2192 <code>.id</code>, <code>malaysia</code> \u2192 <code>.my</code>, \u2026); unrecognized locations are skipped rather than emitting a junk <code>site:.</code> operator.</p>\n<ul><li>Without <code>--geodork-search</code> it is fully offline.</li></ul>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/geodork/geodork.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/geodork/geodork.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/geodork/README.md"
+  },
+  {
+   "name": "reportgen",
+   "version": "1.0.0",
+   "description": "Summarize result files into an HTML/JSON report",
+   "ref": "@plugins/reportgen",
+   "module": "@plugins/reportgen/reportgen.py",
+   "bytes": 6058,
+   "options": [
+    {
+     "flag": "--reportgen-from",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Folder with result files (default: the active environment's results dir)"
+    },
+    {
+     "flag": "--reportgen-save",
+     "type": "str",
+     "default": "report.html",
+     "choices": [],
+     "help": "Output report path (env-guarded)"
+    },
+    {
+     "flag": "--reportgen-format",
+     "type": "str",
+     "default": "html",
+     "choices": [
+      "html",
+      "json"
+     ],
+     "help": "Report format"
+    },
+    {
+     "flag": "--reportgen-title",
+     "type": "str",
+     "default": "AtDork Report",
+     "choices": [],
+     "help": "Report title"
+    },
+    {
+     "flag": "--reportgen-max-rows",
+     "type": "int",
+     "default": 500,
+     "choices": [],
+     "help": "Maximum result rows in the report (0 = all)"
+    }
+   ],
+   "trigger": "--reportgen",
+   "readme_html": "<h1>reportgen \u2014 summarize result files into an HTML/JSON report</h1>\n<p>Turn the result files in your environment's results folder into a single self-contained HTML report (or JSON) with every result row, its source file and a per-file entry count.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/reportgen</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># run some searches first so results exist\natdork -q &#x27;site:example.com ext:pdf&#x27; -r 20 -o json\n\n# build an HTML report in the environment root\natdork --reportgen-save report.html\n\n# or machine-readable JSON\natdork --reportgen-format json --reportgen-save report.json</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--reportgen-from</code></td><td>active results dir</td><td>Folder with result files (<code>.json</code> / <code>.txt</code> / <code>.csv</code>).</td></tr><tr><td><code>--reportgen-save</code></td><td><code>report.html</code></td><td>Output report path (env-guarded).</td></tr><tr><td><code>--reportgen-format</code></td><td><code>html</code></td><td><code>html</code> or <code>json</code>.</td></tr><tr><td><code>--reportgen-title</code></td><td><code>AtDork Report</code></td><td>Report title.</td></tr><tr><td><code>--reportgen-max-rows</code></td><td><code>500</code></td><td>Maximum result rows in the report (<code>0</code> = all).</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>Fully offline \u2014 reads local result files only, spends no credits.</li><li>The HTML report is self-contained (inline CSS), so it can be shared as a</li></ul>\n<p>single file.</p>\n<ul><li>The output file itself is excluded from the scan, so re-running never</li></ul>\n<p>double-counts the report.</p>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/reportgen/reportgen.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/reportgen/reportgen.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/reportgen/README.md"
+  },
+  {
+   "name": "subdomain",
+   "version": "1.0.0",
+   "description": "Discover indexed subdomains of a target via search dorks",
+   "ref": "@plugins/subdomain",
+   "module": "@plugins/subdomain/subdomain.py",
+   "bytes": 5296,
+   "options": [
+    {
+     "flag": "--subdomain-target",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Root domain to enumerate (e.g. example.com)"
+    },
+    {
+     "flag": "--subdomain-save",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Write the subdomains to this file (env-guarded)"
+    },
+    {
+     "flag": "--subdomain-search",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "Actually run the dorks and print discovered subdomains (spends search credits)"
+    },
+    {
+     "flag": "--subdomain-verbose",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "Print the raw dorks too (implied by --subdomain-search)"
+    },
+    {
+     "flag": "--subdomain-limit",
+     "type": "int",
+     "default": 0,
+     "choices": [],
+     "help": "Emit at most N dorks (0 = all)"
+    }
+   ],
+   "trigger": "--subdomain",
+   "readme_html": "<h1>subdomain \u2014 discover indexed subdomains of a target</h1>\n<p>Surface a target's subdomains (api, staging, admin, dev panels, cloud assets) through search-engine dorks. Prints the dorks by default, or actually runs them and prints the unique subdomains found in the result URLs.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/subdomain</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># print the dorks (offline, no credits)\natdork --subdomain-target example.com\n\n# run them through the engine and print discovered subdomains\natdork --subdomain-target example.com --subdomain-search\n\n# save discovered subdomains\natdork --subdomain-target example.com --subdomain-search --subdomain-save subs.txt</code></pre>\n<p>Feed the results into other tooling:</p>\n<pre><code class=\"language-bash\">atdork --batch-file subs.txt -r 20</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--subdomain-target</code></td><td>\u2014</td><td>Root domain to enumerate (e.g. <code>example.com</code>). Required.</td></tr><tr><td><code>--subdomain-search</code></td><td>off</td><td>Actually run the dorks and print discovered subdomains (spends search credits).</td></tr><tr><td><code>--subdomain-verbose</code></td><td>off</td><td>Print the raw dorks too (implied by <code>--subdomain-search</code>).</td></tr><tr><td><code>--subdomain-save</code></td><td>\u2014</td><td>Write subdomains (with <code>--subdomain-search</code>) or the dorks (without) to a file, env-guarded.</td></tr><tr><td><code>--subdomain-limit</code></td><td><code>0</code></td><td>Emit at most N dorks (<code>0</code> = all).</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>The dork set targets panels (<code>inurl:admin</code>, <code>inurl:grafana</code>), cloud hosts</li></ul>\n<p>(<code>inurl:amazonaws.com</code>, <code>inurl:herokuapp.com</code>) and open indexes (<code>intitle:\"index of\" .git</code>).</p>\n<ul><li>Without <code>--subdomain-search</code> it is fully offline.</li><li>Only subdomains of the target root are extracted; the bare root is</li></ul>\n<p>excluded from the output.</p>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/subdomain/subdomain.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/subdomain/subdomain.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/subdomain/README.md"
+  },
+  {
+   "name": "usernamehunt",
+   "version": "1.0.0",
+   "description": "Find where a username/handle is used across the web",
+   "ref": "@plugins/usernamehunt",
+   "module": "@plugins/usernamehunt/usernamehunt.py",
+   "bytes": 4661,
+   "options": [
+    {
+     "flag": "--usernamehunt-name",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Username / handle to hunt (without @)"
+    },
+    {
+     "flag": "--usernamehunt-type",
+     "type": "str",
+     "default": "all",
+     "choices": [
+      "social",
+      "code",
+      "paste",
+      "gaming",
+      "all"
+     ],
+     "help": "Dork category"
+    },
+    {
+     "flag": "--usernamehunt-save",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Write the dorks to this file (env-guarded)"
+    },
+    {
+     "flag": "--usernamehunt-search",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "Run the dorks and print matching URLs (spends credits)"
+    },
+    {
+     "flag": "--usernamehunt-limit",
+     "type": "int",
+     "default": 0,
+     "choices": [],
+     "help": "Emit at most N dorks (0 = all)"
+    }
+   ],
+   "trigger": "--usernamehunt",
+   "readme_html": "<h1>usernamehunt \u2014 username / handle discovery across the web</h1>\n<p>Find where a handle is used: social platforms, code hosts, paste sites and gaming profiles. Prints the dorks by default, or runs them and prints the matching URLs.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/usernamehunt</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># all categories, offline\natdork --usernamehunt-name &quot;johnwick&quot;\n\n# only code-hosting profiles\natdork --usernamehunt-name &quot;johnwick&quot; --usernamehunt-type code\n\n# run them and print matching URLs\natdork --usernamehunt-name &quot;johnwick&quot; --usernamehunt-search\n\n# save\natdork --usernamehunt-name &quot;johnwick&quot; --usernamehunt-save handles.txt</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--usernamehunt-name</code></td><td>\u2014</td><td>Username / handle to hunt (without <code>@</code>). Required.</td></tr><tr><td><code>--usernamehunt-type</code></td><td><code>all</code></td><td>Category: <code>social</code>, <code>code</code>, <code>paste</code>, <code>gaming</code>, <code>all</code>.</td></tr><tr><td><code>--usernamehunt-search</code></td><td>off</td><td>Run the dorks and print matching URLs (spends search credits).</td></tr><tr><td><code>--usernamehunt-save</code></td><td>\u2014</td><td>Write URLs (with <code>--usernamehunt-search</code>) or the dorks (without) to a file, env-guarded.</td></tr><tr><td><code>--usernamehunt-limit</code></td><td><code>0</code></td><td>Emit at most N dorks (<code>0</code> = all).</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>A leading <code>@</code> is stripped, so <code>--usernamehunt-name @johnwick</code> works too.</li><li>Exact-handle dorks (<code>site:github.com/{name}</code>) are used where the platform</li></ul>\n<p>has a predictable profile URL; quoted dorks elsewhere.</p>\n<ul><li>Without <code>--usernamehunt-search</code> it is fully offline.</li></ul>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/usernamehunt/usernamehunt.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/usernamehunt/usernamehunt.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/usernamehunt/README.md"
+  },
+  {
+   "name": "vulndork",
+   "version": "1.0.0",
+   "description": "Build (and optionally run) vulnerability-hunting dorks",
+   "ref": "@plugins/vulndork",
+   "module": "@plugins/vulndork/vulndork.py",
+   "bytes": 7277,
+   "options": [
+    {
+     "flag": "--vulndork-target",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Root domain to hunt (e.g. example.com)"
+    },
+    {
+     "flag": "--vulndork-product",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Product + version string (e.g. 'apache 2.4.49')"
+    },
+    {
+     "flag": "--vulndork-cve",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Add proof-of-concept paths for a CVE (e.g. CVE-2021-41773)"
+    },
+    {
+     "flag": "--vulndork-type",
+     "type": "str",
+     "default": "exposed",
+     "choices": [
+      "exposed",
+      "version",
+      "panels",
+      "all"
+     ],
+     "help": "Dork category"
+    },
+    {
+     "flag": "--vulndork-save",
+     "type": "str",
+     "default": null,
+     "choices": [],
+     "help": "Write the dorks to this file (env-guarded)"
+    },
+    {
+     "flag": "--vulndork-search",
+     "type": "store_true",
+     "default": null,
+     "choices": [],
+     "help": "Run the dorks and print matching URLs (spends credits)"
+    },
+    {
+     "flag": "--vulndork-limit",
+     "type": "int",
+     "default": 0,
+     "choices": [],
+     "help": "Emit at most N dorks (0 = all)"
+    }
+   ],
+   "trigger": "--vulndork",
+   "readme_html": "<h1>vulndork \u2014 vulnerability-hunting dork sets by target / product / CVE</h1>\n<p>Generate dorks that surface exposed files, version strings, admin panels and known-exploit paths for a target, a product+version, or a specific CVE.</p>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">atdork install @plugins/vulndork</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-bash\"># exposed-file dorks for a target\natdork --vulndork-target example.com\n\n# version-disclosure dorks\natdork --vulndork-target example.com --vulndork-type version\n\n# product + version, all categories\natdork --vulndork-product &quot;apache 2.4.49&quot; --vulndork-type all\n\n# add PoC paths for a known CVE\natdork --vulndork-target example.com --vulndork-cve CVE-2021-41773\n\n# run them and print the matching URLs\natdork --vulndork-target example.com --vulndork-search --vulndork-save hits.txt</code></pre>\n<h2>Options</h2>\n<table><thead><tr><th>Flag</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>--vulndork-target</code></td><td>\u2014</td><td>Root domain to hunt (e.g. <code>example.com</code>).</td></tr><tr><td><code>--vulndork-product</code></td><td>\u2014</td><td>Product + version string (e.g. <code>apache 2.4.49</code>).</td></tr><tr><td><code>--vulndork-cve</code></td><td>\u2014</td><td>Add proof-of-concept paths for a CVE (e.g. <code>CVE-2021-41773</code>).</td></tr><tr><td><code>--vulndork-type</code></td><td><code>exposed</code></td><td>Category: <code>exposed</code>, <code>version</code>, <code>panels</code>, <code>all</code>.</td></tr><tr><td><code>--vulndork-search</code></td><td>off</td><td>Run the dorks and print matching URLs (spends search credits).</td></tr><tr><td><code>--vulndork-save</code></td><td>\u2014</td><td>Write URLs (with <code>--vulndork-search</code>) or the dorks (without) to a file, env-guarded.</td></tr><tr><td><code>--vulndork-limit</code></td><td><code>0</code></td><td>Emit at most N dorks (<code>0</code> = all).</td></tr></tbody></table>\n<h2>CVE PoC paths</h2>\n<p>Recognized CVEs (best-effort path prefixes for reconnaissance):</p>\n<p><code>CVE-2021-41773</code>, <code>CVE-2021-42013</code>, <code>CVE-2014-6271</code> (Shellshock), <code>CVE-2017-5638</code>, <code>CVE-2019-11510</code>, <code>CVE-2020-1472</code>, <code>CVE-2021-44228</code> (Log4Shell), <code>CVE-2023-1389</code>. Unknown CVEs fall back to generic <code>\"&lt;cve&gt;\" \"proof of concept\"</code> dorks.</p>\n<h2>Notes</h2>\n<ul><li><strong>Reconnaissance only.</strong> A hit means the path is <em>indexed</em> by the search</li></ul>\n<p>engine \u2014 not that the target is vulnerable. Verify against systems you are authorized to test.</p>\n<ul><li>Without <code>--vulndork-search</code> it is fully offline.</li></ul>",
+   "blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/vulndork/vulndork.py",
+   "raw": "https://raw.githubusercontent.com/amnottdevv/Atdork-DB/main/@plugins/vulndork/vulndork.py",
+   "readme_blob": "https://github.com/amnottdevv/Atdork-DB/blob/main/@plugins/vulndork/README.md"
+  }
+ ]
+}

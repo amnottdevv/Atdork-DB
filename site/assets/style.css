@@ -177,6 +177,39 @@ td.act { white-space: nowrap; text-align: right; }
 .footer-inner { color: var(--muted); font-size: 13px; }
 .footer-inner p { margin: 4px 0; }
 
+.detail-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.body.flush { padding: 0; }
+.body.flush table { margin: 0; }
+.body.flush thead th { background: var(--surface-2); }
+.body.flush tbody td:first-child code { color: var(--accent); font-size: 13px; }
+
+/* ── rendered README (.md) ──────────────────────────── */
+.md { line-height: 1.65; }
+.md > :first-child { margin-top: 0; }
+.md > :last-child { margin-bottom: 0; }
+.md h1 { font-size: 22px; margin: 22px 0 10px; letter-spacing: -.3px; }
+.md h2 { font-size: 17px; margin: 24px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border-soft); }
+.md h3 { font-size: 15px; margin: 18px 0 6px; }
+.md p { margin: 10px 0; color: var(--text); }
+.md a { color: var(--link); }
+.md code {
+  font-family: var(--mono); font-size: .9em;
+  background: rgba(110, 118, 129, .2); padding: .12em .4em; border-radius: 5px;
+}
+.md pre {
+  background: var(--surface-2); border: 1px solid var(--border-soft);
+  border-radius: 8px; padding: 13px 15px; overflow-x: auto; margin: 12px 0;
+}
+.md pre code { background: none; padding: 0; font-size: 12.8px; line-height: 1.6; color: var(--text); }
+.md ul, .md ol { margin: 10px 0; padding-left: 22px; }
+.md li { margin: 4px 0; }
+.md li::marker { color: var(--muted); }
+.md blockquote { margin: 12px 0; padding: 2px 16px; border-left: 3px solid var(--border); color: var(--muted); }
+.md table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
+.md thead th { background: var(--surface-2); }
+.md tbody td { font-size: 13.5px; }
+.md hr { border: none; border-top: 1px solid var(--border-soft); margin: 20px 0; }
+
 /* ── responsive ─────────────────────────────────────── */
 @media (max-width: 860px) {
   .stats { grid-template-columns: repeat(2, 1fr); }

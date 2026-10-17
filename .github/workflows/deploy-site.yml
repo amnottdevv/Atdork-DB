@@ -6,6 +6,7 @@ on:
     paths:
       - "Index.idn"
       - "@*/README.md"
+      - "@plugins/**"
       - "site/**"
       - "scripts/build_site.py"
       - ".github/workflows/deploy-site.yml"

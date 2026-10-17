@@ -39,6 +39,13 @@
   }
 
   const folderTitle = (name) => (DB.folders.find((f) => f.name === name) || {}).title || name;
+  let PLUGINS = null;
+
+  const loadPlugins = () => (PLUGINS ? PLUGINS
+    : fetch("data/plugins.json").then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+        .then((j) => { PLUGINS = j; return PLUGINS; }));
+
+  const optType = (o) => (o.type === "store_true" ? "switch" : o.type);
 
   function filtered() {
     const toks = state.q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -197,10 +204,113 @@
       .catch(() => { view.querySelector("#pv").textContent = "(preview unavailable)"; });
   }
 
+  /* ── plugins views ─────────────────────────────── */
+  function renderPlugins() {
+    loadPlugins().then((data) => {
+      const list = data.plugins || [];
+      document.title = "Plugins — Atdork-DB";
+      view.innerHTML = `
+        <nav class="crumb"><a href="#/">catalog</a> / plugins</nav>
+        <div class="detail-head">
+          <h1>Plugins</h1>
+          <span class="muted">${list.length} tool${list.length === 1 ? "" : "s"} · run as
+            <code>--&lt;plugin&gt;-&lt;option&gt;</code> flags</span>
+        </div>
+        <p class="detail-desc">Installable AtDork extensions: Python tools that add new
+          flags to the CLI. Metadata is parsed without executing code — a plugin only
+          runs when its flags are actually used.</p>
+        <div class="table"><table>
+          <thead><tr><th>Plugin</th><th class="num size">Version</th>
+            <th class="desc-h">Description</th><th></th></tr></thead>
+          <tbody>${list.map((p) => `
+            <tr>
+              <td class="pkg"><a href="#/plugin/${encodeURIComponent(p.name)}">${esc(p.name)}</a>
+                <span class="folder-tag">${esc(p.trigger)}</span></td>
+              <td class="num size">${esc(p.version)}</td>
+              <td class="desc">${esc(p.description)}</td>
+              <td class="act"><button class="btn" data-copy="atdork install ${esc(p.ref)}"
+                  title="Copy install command">⧉ install</button></td>
+            </tr>`).join("")}
+          </tbody>
+        </table></div>`;
+    }).catch(() => {
+      view.innerHTML = `<div class="empty pad"><b>Plugins failed to load.</b>
+        <p>Try a hard refresh, or check <a href="https://github.com/amnottdevv/Atdork-DB">the repository</a>.</p></div>`;
+    });
+  }
+
+  function renderPluginDetail(name) {
+    loadPlugins().then((data) => {
+      const p = (data.plugins || []).find((x) => x.name === name || x.ref === name);
+      if (!p) {
+        document.title = "Not found — Atdork-DB";
+        view.innerHTML = `<div class="empty pad"><b>Plugin not found: <code>${esc(name)}</code></b>
+          <p><a href="#/plugins">← Back to plugins</a></p></div>`;
+        return;
+      }
+      document.title = `${p.name} — Atdork-DB plugins`;
+      const example = p.trigger + (p.options.length
+        ? " \\\n       " + p.options.slice(0, 3).map((o) => (
+            o.type === "store_true" ? o.flag : `${o.flag} "value"`)).join(" \\\n       ")
+        : "");
+      view.innerHTML = `
+        <nav class="crumb"><a href="#/">catalog</a> / <a href="#/plugins">plugins</a> / ${esc(p.name)}</nav>
+        <div class="detail-head">
+          <h1>${esc(p.name)} <span class="muted">v${esc(p.version)}</span></h1>
+          <div class="detail-actions">
+            <a class="btn" href="${esc(p.blob)}" target="_blank" rel="noopener">View source ↗</a>
+            <button class="btn primary big" data-copy="atdork install ${esc(p.ref)}">⧉ atdork install</button>
+          </div>
+        </div>
+        <div class="badges">
+          <span class="badge">plugin</span>
+          <span class="badge gray">${p.options.length} option(s)</span>
+          <span class="badge gray">${fmtSize(p.bytes)}</span>
+          <span class="badge gray">${esc(p.ref)}</span>
+        </div>
+        <p class="detail-desc">${esc(p.description)}</p>
+
+        <div class="cmd"><code><span class="prompt">$ </span>atdork install ${esc(p.ref)}</code>
+          <button class="btn" data-copy="atdork install ${esc(p.ref)}">⧉ copy</button></div>
+        <div class="cmd"><code><span class="prompt">$ </span>${esc(example)}</code>
+          <button class="btn" data-copy="${esc(example)}">⧉ copy</button></div>
+        <p class="hint">every option is registered as <code>--${esc(p.name)}-&lt;option&gt;</code> —
+          the plugin runs when the bare <code>${esc(p.trigger)}</code> flag or any
+          <code>--${esc(p.name)}-…</code> argument is present.</p>
+
+        ${p.options.length ? `<div class="card"><h3>Options</h3>
+          <div class="body flush"><table>
+            <thead><tr><th>Flag</th><th>Type</th><th class="num size">Default</th>
+              <th class="desc-h">Description</th></tr></thead>
+            <tbody>${p.options.map((o) => `
+              <tr><td class="pkg"><code>${esc(o.flag)}</code></td>
+                <td class="desc">${esc(optType(o))}${o.choices.length ? ` · ${esc(o.choices.join(", "))}` : ""}</td>
+                <td class="num size">${o.default == null ? "—" : esc(JSON.stringify(o.default))}</td>
+                <td class="desc">${esc(o.help)}</td></tr>`).join("")}
+            </tbody></table></div></div>` : ""}
+
+        <div class="card"><h3>README <span class="muted">from the repository</span>
+          <a class="h-link" href="${esc(p.readme_blob)}" target="_blank" rel="noopener">view raw ↗</a></h3>
+          <div class="body md">${p.readme_html || "<p class='muted'>No README.</p>"}</div></div>
+
+        <div class="card"><h3>Source</h3><div class="body meta-grid">
+          <div><b>Module</b><span>${esc(p.module)}</span></div>
+          <div><b>Size</b><span>${fmtSize(p.bytes)}</span></div>
+          <div><b>Source</b><span><a href="${esc(p.blob)}">view</a> · <a href="${esc(p.raw)}">raw</a></span></div>
+          <div><b>Install ref</b><span>${esc(p.ref)}</span></div>
+        </div></div>`;
+    }).catch(() => {
+      view.innerHTML = `<div class="empty pad"><b>Plugins failed to load.</b>
+        <p>Try a hard refresh, or check <a href="https://github.com/amnottdevv/Atdork-DB">the repository</a>.</p></div>`;
+    });
+  }
+
   /* ── router + boot ───────────────────────────────── */
   function route() {
     const h = location.hash.replace(/^#\/?/, "");
     window.scrollTo(0, 0);
+    if (h === "plugins") return renderPlugins();
+    if (h.startsWith("plugin/")) return renderPluginDetail(decodeURIComponent(h.slice(7)));
     if (h.startsWith("p/")) return renderDetail(decodeURIComponent(h.slice(2)));
     if (h.startsWith("f/")) {
       state.folder = decodeURIComponent(h.slice(2));
