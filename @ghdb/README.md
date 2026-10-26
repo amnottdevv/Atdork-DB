@@ -1,6 +1,6 @@
 # GHDB Dork Database
 
-Last updated: **2026-10-19 08:31 UTC**
+Last updated: **2026-10-26 08:33 UTC**
 
 Total dorks: **7944**
 
